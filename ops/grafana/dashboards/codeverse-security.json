@@ -1,0 +1,263 @@
+{
+  "uid": "codeverse-security",
+  "title": "CODEVERSE / Authentication & Access Monitoring",
+  "schemaVersion": 40,
+  "version": 1,
+  "refresh": "15s",
+  "timezone": "browser",
+  "tags": [
+    "codeverse",
+    "security",
+    "rbac",
+    "journey"
+  ],
+  "time": {
+    "from": "now-6h",
+    "to": "now"
+  },
+  "annotations": {
+    "list": []
+  },
+  "panels": [
+    {
+      "id": 1,
+      "title": "Access denied / minute",
+      "type": "stat",
+      "datasource": {
+        "type": "prometheus",
+        "uid": "codeverse-prometheus"
+      },
+      "gridPos": {
+        "h": 8,
+        "w": 6,
+        "x": 0,
+        "y": 0
+      },
+      "targets": [
+        {
+          "refId": "A",
+          "expr": "sum(rate(codeverse_access_events_total{outcome=\"denied\"}[5m]))*60",
+          "legendFormat": "{{role}} \u00b7 {{action}}",
+          "range": false
+        }
+      ],
+      "fieldConfig": {
+        "defaults": {
+          "unit": "short"
+        },
+        "overrides": []
+      },
+      "options": {}
+    },
+    {
+      "id": 2,
+      "title": "Successful actions / minute",
+      "type": "stat",
+      "datasource": {
+        "type": "prometheus",
+        "uid": "codeverse-prometheus"
+      },
+      "gridPos": {
+        "h": 8,
+        "w": 6,
+        "x": 6,
+        "y": 0
+      },
+      "targets": [
+        {
+          "refId": "A",
+          "expr": "sum(rate(codeverse_access_events_total{outcome=\"allowed\"}[5m]))*60",
+          "legendFormat": "{{role}} \u00b7 {{action}}",
+          "range": false
+        }
+      ],
+      "fieldConfig": {
+        "defaults": {
+          "unit": "short"
+        },
+        "overrides": []
+      },
+      "options": {}
+    },
+    {
+      "id": 3,
+      "title": "Completed career steps",
+      "type": "stat",
+      "datasource": {
+        "type": "prometheus",
+        "uid": "codeverse-prometheus"
+      },
+      "gridPos": {
+        "h": 8,
+        "w": 6,
+        "x": 12,
+        "y": 0
+      },
+      "targets": [
+        {
+          "refId": "A",
+          "expr": "sum(codeverse_journey_events_total)",
+          "legendFormat": "{{role}} \u00b7 {{action}}",
+          "range": false
+        }
+      ],
+      "fieldConfig": {
+        "defaults": {
+          "unit": "short"
+        },
+        "overrides": []
+      },
+      "options": {}
+    },
+    {
+      "id": 4,
+      "title": "API available",
+      "type": "stat",
+      "datasource": {
+        "type": "prometheus",
+        "uid": "codeverse-prometheus"
+      },
+      "gridPos": {
+        "h": 8,
+        "w": 6,
+        "x": 18,
+        "y": 0
+      },
+      "targets": [
+        {
+          "refId": "A",
+          "expr": "up{job=\"codeverse-api\"}",
+          "legendFormat": "{{role}} \u00b7 {{action}}",
+          "range": false
+        }
+      ],
+      "fieldConfig": {
+        "defaults": {
+          "unit": "short"
+        },
+        "overrides": []
+      },
+      "options": {}
+    },
+    {
+      "id": 5,
+      "title": "Authorization denials over time",
+      "type": "timeseries",
+      "datasource": {
+        "type": "prometheus",
+        "uid": "codeverse-prometheus"
+      },
+      "gridPos": {
+        "h": 10,
+        "w": 12,
+        "x": 0,
+        "y": 8
+      },
+      "targets": [
+        {
+          "refId": "A",
+          "expr": "sum by (role, action) (rate(codeverse_access_events_total{outcome=\"denied\"}[5m]))",
+          "legendFormat": "{{role}} \u00b7 {{action}}",
+          "range": true
+        }
+      ],
+      "fieldConfig": {
+        "defaults": {
+          "unit": "short"
+        },
+        "overrides": []
+      },
+      "options": {}
+    },
+    {
+      "id": 6,
+      "title": "Allowed actions over time",
+      "type": "timeseries",
+      "datasource": {
+        "type": "prometheus",
+        "uid": "codeverse-prometheus"
+      },
+      "gridPos": {
+        "h": 10,
+        "w": 12,
+        "x": 12,
+        "y": 8
+      },
+      "targets": [
+        {
+          "refId": "A",
+          "expr": "sum by (role, action) (rate(codeverse_access_events_total{outcome=\"allowed\"}[5m]))",
+          "legendFormat": "{{role}} \u00b7 {{action}}",
+          "range": true
+        }
+      ],
+      "fieldConfig": {
+        "defaults": {
+          "unit": "short"
+        },
+        "overrides": []
+      },
+      "options": {}
+    },
+    {
+      "id": 7,
+      "title": "Career journey stages",
+      "type": "barchart",
+      "datasource": {
+        "type": "prometheus",
+        "uid": "codeverse-prometheus"
+      },
+      "gridPos": {
+        "h": 9,
+        "w": 12,
+        "x": 0,
+        "y": 18
+      },
+      "targets": [
+        {
+          "refId": "A",
+          "expr": "sum by (step) (codeverse_journey_events_total)",
+          "legendFormat": "{{role}} \u00b7 {{action}}",
+          "range": false
+        }
+      ],
+      "fieldConfig": {
+        "defaults": {
+          "unit": "short"
+        },
+        "overrides": []
+      },
+      "options": {}
+    },
+    {
+      "id": 8,
+      "title": "Prometheus scrape failures",
+      "type": "timeseries",
+      "datasource": {
+        "type": "prometheus",
+        "uid": "codeverse-prometheus"
+      },
+      "gridPos": {
+        "h": 9,
+        "w": 12,
+        "x": 12,
+        "y": 18
+      },
+      "targets": [
+        {
+          "refId": "A",
+          "expr": "up{job=\"codeverse-api\"} == 0",
+          "legendFormat": "{{role}} \u00b7 {{action}}",
+          "range": true
+        }
+      ],
+      "fieldConfig": {
+        "defaults": {
+          "unit": "short"
+        },
+        "overrides": []
+      },
+      "options": {}
+    }
+  ]
+}

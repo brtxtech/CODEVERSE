@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>CODEVERSE: your code, verified</title>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:wght@500;700&family=IBM+Plex+Sans:wght@400;500;600&display=swap">
+<style>
+:root{--bg:#070B16;--panel:#0E1424;--panel2:#131B30;--ink:#EAF0FF;--mute:#98A5C3;--line:#232D48;--pri:#7C8CFF;--ok:#3FD9C0;--warn:#F5B454;--bad:#FF7A8A;--warm:#FFC873;color-scheme:dark}
+*{box-sizing:border-box}html{scroll-behavior:smooth}
+body{margin:0;background:var(--bg);color:var(--ink);font:15px/1.55 "IBM Plex Sans",system-ui,sans-serif;min-height:100vh}
+h1,h2,h3{font-family:"Bricolage Grotesque",system-ui,sans-serif;margin:0;line-height:1.1;letter-spacing:-.02em}
+a{color:var(--pri)}button,input,select{font:inherit;color:inherit}:focus-visible{outline:3px solid var(--pri);outline-offset:2px}
+#city{position:fixed;inset:0 0 auto 0;width:100%;height:50vh;min-height:340px;display:block;z-index:0}
+.hero{position:fixed;inset:0 0 auto 0;height:50vh;min-height:340px;z-index:1;pointer-events:none;padding:calc(env(safe-area-inset-top,0px) + 18px) 28px 26px;display:flex;flex-direction:column;justify-content:space-between;background:linear-gradient(180deg,rgba(7,11,22,.55),rgba(7,11,22,0) 35%,rgba(7,11,22,0) 55%,var(--bg))}
+.bar{display:flex;justify-content:space-between;align-items:center;pointer-events:auto}
+.logo{font:700 19px "Bricolage Grotesque";letter-spacing:.04em}
+.trust{display:flex;gap:8px;align-items:center;color:var(--mute);font-size:13px}.trust i{width:8px;height:8px;border-radius:50%;background:var(--ok);box-shadow:0 0 10px var(--ok)}
+.hero h1{font-size:clamp(30px,5vw,54px);max-width:16ch;text-shadow:0 2px 30px rgba(7,11,22,.8)}
+.hero p{margin:10px 0 0;color:var(--mute);max-width:46ch}
+.hero .stat{display:flex;gap:22px;margin-top:14px;font-size:13px;color:var(--mute)}.hero .stat b{display:block;font:700 22px "Bricolage Grotesque";color:var(--ink)}
+.sheet{position:relative;z-index:2;margin-top:max(50vh,340px);background:var(--panel);border:1px solid var(--line);border-radius:26px 26px 0 0;padding:26px clamp(18px,4vw,48px) 60px;min-height:60vh;box-shadow:0 -30px 60px rgba(0,0,0,.45)}
+.wrap{max-width:860px;margin:0 auto}
+.rail{display:flex;gap:6px;margin-bottom:6px}.rail i{flex:1;height:5px;border-radius:9px;background:var(--line);transition:background .4s}.rail i.on{background:var(--ok)}.rail i.cur{background:var(--pri)}
+.cap{display:flex;justify-content:space-between;color:var(--mute);font-size:13px;margin-bottom:26px}
+.slide{animation:in .45s cubic-bezier(.2,.7,.2,1)}@keyframes in{from{opacity:0;transform:translateX(26px)}to{opacity:1;transform:none}}
+@media(prefers-reduced-motion:reduce){.slide{animation:none}}
+.slide h2{font-size:clamp(26px,3.6vw,38px);margin-bottom:10px}.lede{color:var(--mute);max-width:60ch;margin:0 0 22px}
+.field{display:flex;flex-direction:column;gap:6px;margin-bottom:14px}label{font-size:13px;color:var(--mute)}
+input[type=text],input[type=email],input[type=password],input[type=search],select{background:var(--panel2);border:1px solid var(--line);border-radius:12px;padding:13px 14px;width:100%}
+.at{display:flex;align-items:center;background:var(--panel2);border:1px solid var(--line);border-radius:12px;padding-left:14px}.at span{color:var(--mute)}.at input{border:0;background:none;padding:13px 10px;outline:none}
+.btn{background:var(--pri);color:#0B1020;border:0;border-radius:12px;padding:12px 22px;font-weight:600;cursor:pointer;text-decoration:none;display:inline-block}
+.btn.ghost{background:none;color:var(--ink);border:1px solid var(--line)}.btn:disabled{opacity:.45;cursor:not-allowed}
+.nav{display:flex;justify-content:space-between;gap:12px;margin-top:28px;flex-wrap:wrap}
+.drop{display:block;border:2px dashed var(--line);border-radius:16px;padding:34px;text-align:center;cursor:pointer;background:var(--panel2)}.drop:hover{border-color:var(--pri)}
+.chips{display:flex;flex-wrap:wrap;gap:8px}.chip{border:1px solid var(--line);background:var(--panel2);border-radius:99px;padding:4px 12px;font-size:13.5px}
+.chip.ok{border-color:var(--ok);color:var(--ok)}.chip.no{border-color:var(--warn);color:var(--warn)}
+.grp{margin:16px 0 8px;font-size:13px;color:var(--mute);display:flex;justify-content:space-between}
+.cards{display:grid;gap:12px;grid-template-columns:repeat(auto-fit,minmax(220px,1fr))}
+.opt{text-align:left;background:var(--panel2);border:1px solid var(--line);border-radius:14px;padding:16px;cursor:pointer}.opt[aria-pressed=true]{border-color:var(--pri);box-shadow:0 0 0 2px var(--pri) inset}.opt b{font:700 17px "Bricolage Grotesque";display:block}
+.msg{margin-top:14px;padding:11px 14px;border-radius:12px;background:#2A1620;color:var(--bad);display:none}.msg.show{display:block}.msg.ok{background:#10281F;color:var(--ok)}
+.kp{display:grid;gap:12px;grid-template-columns:repeat(auto-fit,minmax(150px,1fr));margin:6px 0 20px}.kp div{background:var(--panel2);border:1px solid var(--line);border-radius:14px;padding:14px}.kp b{font:700 28px "Bricolage Grotesque";display:block}.kp small{color:var(--mute)}
+.ack{display:flex;gap:10px;align-items:flex-start;margin-top:18px;color:var(--mute)}.ack input{margin-top:4px;width:18px;height:18px}
+.found{max-height:340px;overflow:auto;padding-right:6px}
+@media(max-width:640px){.hero{padding:calc(env(safe-area-inset-top,0px) + 14px) 18px 20px}.trust span{display:none}.hero .stat{gap:14px}}
+</style>
+</head>
+<body>
+<canvas id="city" aria-hidden="true"></canvas>
+<section class="hero">
+ <div class="bar"><span class="logo">CODEVERSE</span><span class="trust"><i></i><span id="trust">Encrypted session · your files stay yours</span><button class="btn ghost" id="out" hidden style="padding:6px 14px;margin-left:12px">Sign out</button></span></div>
+ <div><h1 id="hh">Your code has a skyline.</h1><p id="hp">Every house is a repository. Add your GitHub name and watch your city light up as your evidence grows.</p><div class="stat" id="hs"></div></div>
+</section>
+<main class="sheet"><div class="wrap" id="app" aria-live="polite"></div></main>
+<script type="module">
+import*as THREE from 'https://cdn.jsdelivr.net/npm/three@0.160.0/build/three.module.js';
+import{createClient}from 'https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2.45.4/+esm';
+const $=s=>document.querySelector(s),esc=s=>String(s??'').replace(/[&<>"']/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));
+const STEPS=['CV','GitHub','Evidence','Career','Gaps','Proof','Readiness'];
+const S={sb:null,session:null,me:null,view:0,mode:'login',careers:[],career:null,msg:'',done:null};
+
+/* ---------- 3D city: houses, always on top ---------- */
+const COL={JavaScript:0xF5D04C,TypeScript:0x4C8DF5,Python:0x56C28B,Java:0xF58A4C,Go:0x4CD3F5,Rust:0xE0795C,'C++':0xC85CF5,C:0x9AA5C8,'C#':0x8E6CF5,PHP:0x8C9CFF,Ruby:0xF54C6B,Kotlin:0xB06CF5,Swift:0xF5774C,Shell:0x7FE08C,HTML:0xF5844C,CSS:0x6CA0F5};
+const cv=$('#city'),R=new THREE.WebGLRenderer({canvas:cv,antialias:true,alpha:true});R.setPixelRatio(Math.min(devicePixelRatio,2));
+const sc=new THREE.Scene();sc.fog=new THREE.FogExp2(0x070B16,.028);
+const cam=new THREE.PerspectiveCamera(42,1,.1,200);
+sc.add(new THREE.HemisphereLight(0x8FA4FF,0x1A1030,.9));
+const moon=new THREE.DirectionalLight(0xBFD0FF,1.1);moon.position.set(-14,22,10);sc.add(moon);
+const warm=new THREE.PointLight(0xFFC873,40,40);warm.position.set(0,5,0);sc.add(warm);
+const city=new THREE.Group();sc.add(city);
+const win=(()=>{const c=document.createElement('canvas');c.width=64;c.height=128;const x=c.getContext('2d');x.fillStyle='#000';x.fillRect(0,0,64,128);for(let r=0;r<8;r++)for(let k=0;k<4;k++)if((r*7+k*13)%5){x.fillStyle='#FFC873';x.fillRect(6+k*15,8+r*15,8,9)}const t=new THREE.CanvasTexture(c);t.colorSpace=THREE.SRGBColorSpace;return t})();
+const gBox=new THREE.BoxGeometry(1,1,1),gRoof=new THREE.ConeGeometry(.78,.55,4);gRoof.rotateY(Math.PI/4);
+const ground=new THREE.Mesh(new THREE.CircleGeometry(40,64),new THREE.MeshStandardMaterial({color:0x0B1226,roughness:1}));ground.rotation.x=-Math.PI/2;sc.add(ground);
+const grid=new THREE.GridHelper(80,50,0x2A3766,0x141C36);grid.position.y=.01;sc.add(grid);
+const ring=new THREE.Mesh(new THREE.TorusGeometry(10,.06,8,128,.01),new THREE.MeshBasicMaterial({color:0x3FD9C0}));ring.rotation.x=-Math.PI/2;ring.position.y=.12;sc.add(ring);
+const stars=(()=>{const g=new THREE.BufferGeometry(),a=[];for(let i=0;i<260;i++){const t=Math.random()*6.28,r=30+Math.random()*50;a.push(Math.cos(t)*r,10+Math.random()*40,Math.sin(t)*r)}g.setAttribute('position',new THREE.Float32BufferAttribute(a,3));return new THREE.Points(g,new THREE.PointsMaterial({size:.22,color:0xBFD0FF,fog:false}))})();sc.add(stars);
+const mats=new Map(),mat=c=>{if(!mats.has(c))mats.set(c,new THREE.MeshStandardMaterial({color:new THREE.Color(c).multiplyScalar(.55),emissive:0xFFC873,emissiveMap:win,emissiveIntensity:.35,roughness:.7}));return mats.get(c)};
+const roofM=new THREE.MeshStandardMaterial({color:0x2B3560,roughness:.8});
+let progress=0,houses=[];
+function seeded(n){let s=n;return()=>((s=Math.imul(s^s>>>15,2246822519)+1)>>>0)/4294967296}
+function build(repos){city.clear();houses=[];const list=repos&&repos.length?repos.slice(0,60):Array.from({length:34},(_,i)=>({name:'p'+i,language:Object.keys(COL)[i%16],size:300+(i*977)%9000,stars:i%7}));
+ const n=list.length,cols=Math.ceil(Math.sqrt(n)),rnd=seeded(7);
+ list.forEach((r,i)=>{const gx=i%cols-cols/2,gz=Math.floor(i/cols)-cols/2,h=1.1+Math.min(4.2,Math.log2((r.size||60)+2)*.34)+Math.min(1.2,(r.stars||0)*.05),w=1.15+rnd()*.35;
+  const g=new THREE.Group(),b=new THREE.Mesh(gBox,mat(COL[r.language]||0x7C8CFF));b.scale.set(w,h,w);b.position.y=h/2;const rf=new THREE.Mesh(gRoof,roofM);rf.scale.set(w*1.25,w*.9,w*1.25);rf.position.y=h+.2;g.add(b,rf);
+  g.position.set(gx*2.9+(rnd()-.5)*.5,0,gz*2.9+(rnd()-.5)*.5);g.userData.t=rnd()*6.28;g.scale.y=.01;g.userData.d=i*.03;city.add(g);houses.push(g)});
+ const span=cols*2.9/2+7;ring.geometry.dispose();ring.geometry=new THREE.TorusGeometry(span,.06,8,160,Math.max(.01,progress*6.283));grid.scale.setScalar(1);cam.userData.r=span*1.55}
+function size(){const h=Math.max(340,innerHeight*.5);R.setSize(innerWidth,h,false);cam.aspect=innerWidth/h;cam.updateProjectionMatrix()}
+addEventListener('resize',size);size();build();
+let mx=0;addEventListener('pointermove',e=>mx=(e.clientX/innerWidth-.5)*2);
+const still=matchMedia('(prefers-reduced-motion:reduce)').matches,clk=new THREE.Clock();
+function frame(){const t=clk.getElapsedTime(),r=(cam.userData.r||16),a=still?.6:t*.07+mx*.25;
+ cam.position.set(Math.cos(a)*r,r*.46+Math.sin(t*.3)*.4,Math.sin(a)*r);cam.lookAt(0,1.4,0);
+ houses.forEach(g=>{const k=Math.min(1,Math.max(0,(t-g.userData.d)*1.4));g.scale.y=1-(1-k)**3;});
+ const e=.25+progress*1.1;mats.forEach(m=>m.emissiveIntensity=e+Math.sin(t*1.6)*.04);warm.intensity=20+progress*70;
+ ring.rotation.z=t*.05;stars.rotation.y=t*.004;R.render(sc,cam);requestAnimationFrame(frame)}
+frame();
+function city_(repos,user){build(repos);$('#hh').textContent=user?'@'+user+'’s city':'Your code has a skyline.';
+ $('#hp').textContent=user?'Taller houses mean larger repositories. Colour shows the main language. The ring closes as you complete your journey.':'Every house is a repository. Add your GitHub name and watch your city light up as your evidence grows.';
+ const langs=new Set((repos||[]).map(r=>r.language).filter(Boolean)).size;$('#hs').innerHTML=repos?.length?`<div><b>${repos.length}</b>houses</div><div><b>${langs}</b>languages</div><div><b>${repos.reduce((a,r)=>a+(r.stars||0),0)}</b>stars</div>`:''}
+
+/* ---------- API + data ---------- */
+async function api(path,o={}){const{data}=await S.sb.auth.getSession();const h={Authorization:'Bearer '+(data.session?.access_token||''),...(o.body&&!(o.body instanceof FormData)?{'Content-Type':'application/json'}:{})};
+ const r=await fetch(path,{...o,headers:h});let j=null;try{j=await r.json()}catch{}if(!r.ok){const d=j?.detail;const e=new Error(typeof d=='string'?d:'Request failed ('+r.status+')');e.status=r.status;throw e}return j}
+const res=n=>(S.me?.steps||[]).find(x=>x.step==n)?.result||{};
+const done=n=>(S.me?.steps||[]).some(x=>x.step==n&&x.status=='completed');
+const techs=()=>res(1).technologies||[];const repos=()=>res(2).repositories||[];
+const langs=()=>new Set(repos().map(r=>(r.language||'').toLowerCase()).filter(Boolean));
+const backed=()=>techs().filter(t=>langs().has(t.name.toLowerCase()));
+async function refresh(){S.me=await api('/api/secure/me');const o=await api('/api/secure/journey/options');S.careers=o.careers;
+ S.view=S.me.submitted?9:Math.min(S.me.next_step||1,8);progress=S.me.submitted?1:(done(1)+done(2)+done(3)+done(4)+done(5)+done(6)+done(7))/7;
+ city_(repos().length?repos():null,res(2).username||null)}
+
+/* ---------- views ---------- */
+const rail=()=>`<div class="rail">${STEPS.map((_,i)=>`<i class="${done(i+1)?'on':''} ${S.view==i+1?'cur':''}"></i>`).join('')}<i class="${S.me?.submitted?'on':''} ${S.view==8?'cur':''}"></i></div><div class="cap"><span>${S.view<8?'Step '+S.view+' of 7 · '+STEPS[S.view-1]:S.view==8?'Final step · Review and submit':'Complete'}</span><span>${Math.round(progress*100)}% of your city lit</span></div>`;
+const msg=()=>`<div class="msg ${S.msg?'show':''} ${S.msgOk?'ok':''}" role="alert">${esc(S.msg)}</div>`;
+function shell(body,nav=''){$('#app').innerHTML=(S.me?rail():'')+`<section class="slide">${body}</section>${msg()}${nav}`}
+function authView(){const su=S.mode=='signup';shell(`<h2>${su?'Create your developer account':'Welcome back'}</h2><p class="lede">${su?'Your role is fixed as Developer. Recruiters and administrators are approved separately.':'Sign in to continue building your evidence.'}</p>
+ ${su?'<div class="field"><label for="dn">Name</label><input id="dn" type="text" autocomplete="name"></div>':''}
+ <div class="field"><label for="em">Email</label><input id="em" type="email" autocomplete="email"></div><div class="field"><label for="pw">Password (10+ characters)</label><input id="pw" type="password" autocomplete="${su?'new-password':'current-password'}"></div>
+ <div class="nav"><button class="btn" id="go">${su?'Create account':'Sign in'}</button><span><button class="btn ghost" data-o="github">GitHub</button> <button class="btn ghost" data-o="google">Google</button></span></div>
+ <p class="lede" style="margin-top:18px"><a href="#" id="sw">${su?'I already have an account':'Create an account'}</a> · Accounts with two-step verification finish at <a href="/secure">/secure</a>.</p>`)}
+function techHtml(list,mark){const g={};list.forEach(t=>(g[t.category||'Other']??=[]).push(t));return Object.keys(g).sort().map(k=>`<div class="grp"><span>${esc(k)}</span><span>${g[k].length}</span></div><div class="chips">${g[k].map(t=>`<span class="chip ${mark?(langs().has(t.name.toLowerCase())?'ok':'no'):''}">${esc(t.name)}</span>`).join('')}</div>`).join('')}
+const nav=(back,label,id='next',dis=false)=>`<div class="nav">${back?'<button class="btn ghost" id="back">Back</button>':'<span></span>'}<button class="btn" id="${id}" ${dis?'disabled':''}>${label}</button></div>`;
+function view(){
+ if(!S.me)return authView();
+ const v=S.view;
+ if(v==1){const t=techs();return shell(`<h2>Upload your CV</h2><p class="lede">PDF, DOCX or TXT. We list every technology we find, so you can check nothing is missing.</p>
+  <label class="drop" for="cvf"><b id="cvn">${t.length?'Replace your CV':'Choose a file or drop it here'}</b><br><small style="color:var(--mute)">Up to 5 MB. Processed on the server and not published.</small><input id="cvf" type="file" accept=".pdf,.docx,.txt" hidden></label>
+  ${t.length?`<div class="kp"><div><b>${t.length}</b><small>technologies found</small></div><div><b>${new Set(t.map(x=>x.category)).size}</b><small>categories</small></div></div><input type="search" id="tf" placeholder="Filter ${t.length} technologies" aria-label="Filter technologies"><div class="found" id="tl">${techHtml(t)}</div>`:''}`,nav(false,'Continue','next',!t.length))}
+ if(v==2){const u=res(2).username||'';return shell(`<h2>Your GitHub name</h2><p class="lede">Just your username. We only read public repository information.</p><div class="field"><label for="gh">GitHub username</label><div class="at"><span>@</span><input id="gh" type="text" value="${esc(u)}" maxlength="39" autocapitalize="off" autocomplete="off" spellcheck="false" placeholder="your-name"></div></div>
+  <button class="btn" id="scan">${u?'Scan again':'Build my city'}</button>${u?`<div class="kp" style="margin-top:20px"><div><b>${repos().length}</b><small>public repositories</small></div><div><b>${langs().size}</b><small>languages</small></div></div>`:''}`,nav(true,'Continue','next',!u))}
+ if(v==3){const b=backed(),t=techs();return shell(`<h2>Evidence review</h2><p class="lede">Green: the technology is a language used in your public repositories. Amber: so far only your CV says it.</p><div class="kp"><div><b>${b.length}</b><small>seen in your code</small></div><div><b>${t.length-b.length}</b><small>CV claims only</small></div></div><div class="found">${techHtml(t,true)}</div>
+  <label class="ack"><input type="checkbox" id="ak"><span>I understand that a repository existing is not proof I wrote it.</span></label>`,nav(true,'Confirm and continue','act',true))}
+ if(v==4)return shell(`<h2>Pick your target</h2><p class="lede">Everything after this is measured against this role.</p><div class="cards">${S.careers.map(c=>`<button class="opt" data-c="${c.id}" aria-pressed="${S.career==c.id||(!S.career&&res(4).career==c.id)}"><b>${esc(c.title)}</b></button>`).join('')}</div>`,nav(true,'Continue','act',!(S.career||res(4).career)))
+ if(v==5){const g=techs().filter(t=>!langs().has(t.name.toLowerCase()));return shell(`<h2>What still needs proof</h2><p class="lede">${g.length} CV technologies are not yet visible in your public code. Not knowing is different from not proving: these are where a project helps most.</p>${g.length?`<div class="found"><div class="chips">${g.map(t=>`<span class="chip no">${esc(t.name)}</span>`).join('')}</div></div>`:'<p>Every technology is visible in your code. Nice.</p>'}<label class="ack"><input type="checkbox" id="ak"><span>I reviewed my gaps.</span></label>`,nav(true,'Continue','act',true))}
+ if(v==6)return shell(`<h2>Show one proof</h2><p class="lede">Choose a repository you built. We look for real manifests and dependencies in it.</p><div class="field"><label for="pr">Your repository</label><select id="pr">${repos().map(r=>`<option value="${esc(r.full_name||(res(2).username+'/'+r.name))}">${esc(r.name)}${r.language?' · '+esc(r.language):''}</option>`).join('')}</select></div>`,nav(true,'Check this repository','act'))
+ if(v==7){const t=techs().length,b=backed().length,p=t?Math.round(100*b/t):0;return shell(`<h2>Your readiness, explained</h2><p class="lede">The share of your CV technologies that your public code supports. It is not a hiring probability.</p><div class="kp"><div><b>${p}%</b><small>evidence coverage</small></div><div><b>${b}/${t}</b><small>technologies backed</small></div><div><b>${res(6).signals_found??0}</b><small>proof signals</small></div></div><label class="ack"><input type="checkbox" id="ak"><span>I understand this score is about evidence, not hiring odds.</span></label>`,nav(true,'Confirm and continue','act',true))}
+ if(v==8)return shell(`<h2>Review and submit</h2><p class="lede">This creates your personal CODEVERSE file and unlocks job opportunities.</p><div class="kp"><div><b>${techs().length}</b><small>technologies</small></div><div><b>@${esc(res(2).username)}</b><small>GitHub</small></div><div><b>${esc((S.careers.find(c=>c.id==res(4).career)||{}).title||'')}</b><small>target</small></div></div>`,nav(true,'Submit my journey','submit'))
+ shell(`<h2>You’re in. Your file is ready.</h2><p class="lede">One file for you, with every technology, your repositories and your evidence summary.</p><div class="nav" style="justify-content:flex-start"><button class="btn" data-f="json">Download JSON</button><button class="btn ghost" data-f="csv">Download technologies CSV</button><a class="btn ghost" href="/secure">Open job opportunities</a></div>`)}
+function paint(){view();wire()}
+function say(m,ok=false){S.msg=m;S.msgOk=ok;const e=document.querySelector('.msg');if(e){e.textContent=m;e.classList.toggle('show',!!m);e.classList.toggle('ok',ok)}}
+async function run(btn,fn){const t=btn.textContent;btn.disabled=true;btn.textContent='Working…';try{await fn()}catch(e){say(e.status==401||e.status==403?'This account needs extra verification or lacks Developer access. Continue at /secure.':e.message);btn.disabled=false;btn.textContent=t}}
+function wire(){const on=(s,f)=>{const e=document.querySelector(s);if(e)e.onclick=f},all=(s,f)=>document.querySelectorAll(s).forEach(e=>e.onclick=()=>f(e));
+ on('#sw',e=>{e.preventDefault();S.mode=S.mode=='login'?'signup':'login';S.msg='';paint()});
+ all('[data-o]',b=>S.sb.auth.signInWithOAuth({provider:b.dataset.o,options:{redirectTo:location.origin+'/start'}}));
+ on('#go',()=>run($('#go'),async()=>{const email=$('#em').value.trim(),password=$('#pw').value;if(!email||password.length<10)throw new Error('Enter your email and a password of at least 10 characters.');
+  if(S.mode=='signup'){const r=await S.sb.auth.signUp({email,password,options:{emailRedirectTo:location.origin+'/start',data:{requested_role:'developer',display_name:($('#dn').value||'').trim()}}});if(r.error)throw r.error;if(!r.data.session){S.msg='Check your email to confirm your account, then sign in.';S.msgOk=true;S.mode='login';paint();return}}
+  else{const r=await S.sb.auth.signInWithPassword({email,password});if(r.error)throw r.error}await start()}));
+ on('#back',()=>{S.view--;S.msg='';paint()});
+ on('#next',()=>{S.view++;S.msg='';paint()});
+ const cvf=$('#cvf');if(cvf)cvf.onchange=async()=>{const f=cvf.files[0];if(!f)return;if(f.size>5e6)return say('That file is over 5 MB.');say('Reading your CV…',true);const fd=new FormData();fd.append('file',f);try{await api('/api/secure/journey/cv',{method:'POST',body:fd});await refresh();S.view=1;S.msg='';paint()}catch(e){say(e.message)}};
+ const tf=$('#tf');if(tf)tf.oninput=()=>{const q=tf.value.toLowerCase();$('#tl').innerHTML=techHtml(techs().filter(t=>t.name.toLowerCase().includes(q)))};
+ on('#scan',()=>run($('#scan'),async()=>{const u=$('#gh').value.trim().replace(/^@/,'');await api('/api/secure/journey/github',{method:'POST',body:JSON.stringify({github_username:u})});await refresh();S.view=2;S.msg='';paint()}));
+ const ak=$('#ak');if(ak)ak.onchange=()=>{$('#act').disabled=!ak.checked};
+ all('[data-c]',b=>{S.career=b.dataset.c;paint()});
+ on('#act',()=>run($('#act'),async()=>{const v=S.view,body=v==4?{career:S.career||res(4).career}:v==6?{repository:$('#pr').value}:{acknowledge:true};await api('/api/secure/journey/steps/'+v,{method:'POST',body:JSON.stringify(body)});await refresh();S.msg='';paint();scrollTo({top:0})}));
+ on('#submit',()=>run($('#submit'),async()=>{await api('/api/secure/journey/submit',{method:'POST'});await refresh();paint();scrollTo({top:0})}));
+ all('[data-f]',async b=>{try{const{data}=await S.sb.auth.getSession();const r=await fetch('/api/secure/journey/file?format='+b.dataset.f,{headers:{Authorization:'Bearer '+data.session.access_token}});if(!r.ok)throw new Error('Could not generate your file.');const bl=await r.blob(),a=document.createElement('a');a.href=URL.createObjectURL(bl);a.download='codeverse-'+(res(2).username||'profile')+'.'+b.dataset.f;a.click();URL.revokeObjectURL(a.href)}catch(e){say(e.message)}})}
+async function start(){try{await refresh();$('#out').hidden=false;S.msg='';paint()}catch(e){S.me=null;paint();say(e.status==401||e.status==403?'This account needs extra verification or lacks Developer access. Continue at /secure.':e.message)}}
+(async()=>{try{const c=await (await fetch('/api/secure/config')).json();S.sb=createClient(c.supabase_url,c.supabase_anon_key,{auth:{persistSession:true,autoRefreshToken:true,detectSessionInUrl:true}});
+ $('#out').onclick=async()=>{await S.sb.auth.signOut();S.me=null;progress=0;city_(null,null);$('#out').hidden=true;paint()};
+ const{data}=await S.sb.auth.getSession();if(data.session)await start();else paint()}catch(e){$('#app').innerHTML='<section class="slide"><h2>Setup required</h2><p class="lede">Supabase is not configured on the server yet. See START_SECURE_CODEVERSE.md.</p></section>'}})();
+</script>
+</body>
+</html>

@@ -1,0 +1,106 @@
+apiVersion: 1
+groups:
+  - orgId: 1
+    name: CODEVERSE Access Security
+    folder: CODEVERSE Security Operations
+    interval: 1m
+    rules:
+      - uid: cv-denied-requests
+        title: CODEVERSE high access-denial rate
+        condition: C
+        data:
+          - refId: A
+            datasourceUid: codeverse-prometheus
+            relativeTimeRange:
+              from: 300
+              to: 0
+            model:
+              expr: sum(increase(codeverse_access_events_total{outcome="denied"}[5m])) or vector(0)
+              refId: A
+              datasource:
+                type: prometheus
+                uid: codeverse-prometheus
+              instant: true
+              range: false
+              intervalMs: 1000
+              maxDataPoints: 43200
+          - refId: B
+            datasourceUid: __expr__
+            model:
+              type: reduce
+              expression: A
+              reducer: last
+              refId: B
+              datasource:
+                type: __expr__
+                uid: __expr__
+          - refId: C
+            datasourceUid: __expr__
+            model:
+              type: threshold
+              expression: B
+              conditions:
+                - type: query
+                  query: {params: [C]}
+                  reducer: {type: last, params: []}
+                  evaluator: {type: gt, params: [10]}
+                  operator: {type: and}
+              refId: C
+              datasource:
+                type: __expr__
+                uid: __expr__
+        noDataState: OK
+        execErrState: Error
+        for: 1m
+        annotations:
+          summary: More than 10 denied CODEVERSE requests in the preceding 5 minutes.
+          description: Review CODEVERSE Security Audit before taking action; this is not proof of compromise.
+        labels:
+          severity: warning
+          service: codeverse
+      - uid: cv-api-unavailable
+        title: CODEVERSE API metrics endpoint unavailable
+        condition: C
+        data:
+          - refId: A
+            datasourceUid: codeverse-prometheus
+            relativeTimeRange:
+              from: 300
+              to: 0
+            model:
+              expr: up{job="codeverse-api"}
+              refId: A
+              datasource: {type: prometheus, uid: codeverse-prometheus}
+              instant: true
+              range: false
+              intervalMs: 1000
+              maxDataPoints: 43200
+          - refId: B
+            datasourceUid: __expr__
+            model:
+              type: reduce
+              expression: A
+              reducer: last
+              refId: B
+              datasource: {type: __expr__, uid: __expr__}
+          - refId: C
+            datasourceUid: __expr__
+            model:
+              type: threshold
+              expression: B
+              conditions:
+                - type: query
+                  query: {params: [C]}
+                  reducer: {type: last, params: []}
+                  evaluator: {type: lt, params: [1]}
+                  operator: {type: and}
+              refId: C
+              datasource: {type: __expr__, uid: __expr__}
+        noDataState: Alerting
+        execErrState: Alerting
+        for: 2m
+        annotations:
+          summary: CODEVERSE Prometheus scrape target is unavailable.
+        labels:
+          severity: critical
+          service: codeverse

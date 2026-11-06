@@ -1,0 +1,1338 @@
+[
+  {
+    "id": "fastapi/fastapi",
+    "full_name": "fastapi/fastapi",
+    "url": "https://github.com/fastapi/fastapi",
+    "category": "Backend",
+    "skills": [
+      "Python",
+      "FastAPI",
+      "REST",
+      "API"
+    ],
+    "search_text": "Python FastAPI REST API",
+    "description": "Backend reference project to study, adapt and contribute to.",
+    "stars": null,
+    "license": null,
+    "metrics_checked_at": null,
+    "source": "Curated reference seed; popularity, license and maintenance must be refreshed from GitHub before use",
+    "plan": [
+      "Read the README, license and contribution guide",
+      "Reproduce a minimal example with tests",
+      "Build an original extension and document the design",
+      "Publish a reproducible demo and request review"
+    ]
+  },
+  {
+    "id": "pallets/flask",
+    "full_name": "pallets/flask",
+    "url": "https://github.com/pallets/flask",
+    "category": "Backend",
+    "skills": [
+      "Python",
+      "Flask",
+      "REST",
+      "API"
+    ],
+    "search_text": "Python Flask REST API",
+    "description": "Backend reference project to study, adapt and contribute to.",
+    "stars": null,
+    "license": null,
+    "metrics_checked_at": null,
+    "source": "Curated reference seed; popularity, license and maintenance must be refreshed from GitHub before use",
+    "plan": [
+      "Read the README, license and contribution guide",
+      "Reproduce a minimal example with tests",
+      "Build an original extension and document the design",
+      "Publish a reproducible demo and request review"
+    ]
+  },
+  {
+    "id": "django/django",
+    "full_name": "django/django",
+    "url": "https://github.com/django/django",
+    "category": "Backend",
+    "skills": [
+      "Python",
+      "Django",
+      "SQL"
+    ],
+    "search_text": "Python Django SQL",
+    "description": "Backend reference project to study, adapt and contribute to.",
+    "stars": null,
+    "license": null,
+    "metrics_checked_at": null,
+    "source": "Curated reference seed; popularity, license and maintenance must be refreshed from GitHub before use",
+    "plan": [
+      "Read the README, license and contribution guide",
+      "Reproduce a minimal example with tests",
+      "Build an original extension and document the design",
+      "Publish a reproducible demo and request review"
+    ]
+  },
+  {
+    "id": "nestjs/nest",
+    "full_name": "nestjs/nest",
+    "url": "https://github.com/nestjs/nest",
+    "category": "Backend",
+    "skills": [
+      "TypeScript",
+      "NestJS",
+      "Node.js"
+    ],
+    "search_text": "TypeScript NestJS Node.js",
+    "description": "Backend reference project to study, adapt and contribute to.",
+    "stars": null,
+    "license": null,
+    "metrics_checked_at": null,
+    "source": "Curated reference seed; popularity, license and maintenance must be refreshed from GitHub before use",
+    "plan": [
+      "Read the README, license and contribution guide",
+      "Reproduce a minimal example with tests",
+      "Build an original extension and document the design",
+      "Publish a reproducible demo and request review"
+    ]
+  },
+  {
+    "id": "expressjs/express",
+    "full_name": "expressjs/express",
+    "url": "https://github.com/expressjs/express",
+    "category": "Backend",
+    "skills": [
+      "JavaScript",
+      "Express",
+      "Node.js"
+    ],
+    "search_text": "JavaScript Express Node.js",
+    "description": "Backend reference project to study, adapt and contribute to.",
+    "stars": null,
+    "license": null,
+    "metrics_checked_at": null,
+    "source": "Curated reference seed; popularity, license and maintenance must be refreshed from GitHub before use",
+    "plan": [
+      "Read the README, license and contribution guide",
+      "Reproduce a minimal example with tests",
+      "Build an original extension and document the design",
+      "Publish a reproducible demo and request review"
+    ]
+  },
+  {
+    "id": "spring-projects/spring-boot",
+    "full_name": "spring-projects/spring-boot",
+    "url": "https://github.com/spring-projects/spring-boot",
+    "category": "Backend",
+    "skills": [
+      "Java",
+      "Spring",
+      "SQL"
+    ],
+    "search_text": "Java Spring SQL",
+    "description": "Backend reference project to study, adapt and contribute to.",
+    "stars": null,
+    "license": null,
+    "metrics_checked_at": null,
+    "source": "Curated reference seed; popularity, license and maintenance must be refreshed from GitHub before use",
+    "plan": [
+      "Read the README, license and contribution guide",
+      "Reproduce a minimal example with tests",
+      "Build an original extension and document the design",
+      "Publish a reproducible demo and request review"
+    ]
+  },
+  {
+    "id": "gofiber/fiber",
+    "full_name": "gofiber/fiber",
+    "url": "https://github.com/gofiber/fiber",
+    "category": "Backend",
+    "skills": [
+      "Go",
+      "REST",
+      "API"
+    ],
+    "search_text": "Go REST API",
+    "description": "Backend reference project to study, adapt and contribute to.",
+    "stars": null,
+    "license": null,
+    "metrics_checked_at": null,
+    "source": "Curated reference seed; popularity, license and maintenance must be refreshed from GitHub before use",
+    "plan": [
+      "Read the README, license and contribution guide",
+      "Reproduce a minimal example with tests",
+      "Build an original extension and document the design",
+      "Publish a reproducible demo and request review"
+    ]
+  },
+  {
+    "id": "encode/httpx",
+    "full_name": "encode/httpx",
+    "url": "https://github.com/encode/httpx",
+    "category": "Backend",
+    "skills": [
+      "Python",
+      "HTTP",
+      "testing"
+    ],
+    "search_text": "Python HTTP testing",
+    "description": "Backend reference project to study, adapt and contribute to.",
+    "stars": null,
+    "license": null,
+    "metrics_checked_at": null,
+    "source": "Curated reference seed; popularity, license and maintenance must be refreshed from GitHub before use",
+    "plan": [
+      "Read the README, license and contribution guide",
+      "Reproduce a minimal example with tests",
+      "Build an original extension and document the design",
+      "Publish a reproducible demo and request review"
+    ]
+  },
+  {
+    "id": "facebook/react",
+    "full_name": "facebook/react",
+    "url": "https://github.com/facebook/react",
+    "category": "Frontend",
+    "skills": [
+      "JavaScript",
+      "TypeScript",
+      "React"
+    ],
+    "search_text": "JavaScript TypeScript React",
+    "description": "Frontend reference project to study, adapt and contribute to.",
+    "stars": null,
+    "license": null,
+    "metrics_checked_at": null,
+    "source": "Curated reference seed; popularity, license and maintenance must be refreshed from GitHub before use",
+    "plan": [
+      "Read the README, license and contribution guide",
+      "Reproduce a minimal example with tests",
+      "Build an original extension and document the design",
+      "Publish a reproducible demo and request review"
+    ]
+  },
+  {
+    "id": "vercel/next.js",
+    "full_name": "vercel/next.js",
+    "url": "https://github.com/vercel/next.js",
+    "category": "Frontend",
+    "skills": [
+      "TypeScript",
+      "React",
+      "Next.js"
+    ],
+    "search_text": "TypeScript React Next.js",
+    "description": "Frontend reference project to study, adapt and contribute to.",
+    "stars": null,
+    "license": null,
+    "metrics_checked_at": null,
+    "source": "Curated reference seed; popularity, license and maintenance must be refreshed from GitHub before use",
+    "plan": [
+      "Read the README, license and contribution guide",
+      "Reproduce a minimal example with tests",
+      "Build an original extension and document the design",
+      "Publish a reproducible demo and request review"
+    ]
+  },
+  {
+    "id": "angular/angular",
+    "full_name": "angular/angular",
+    "url": "https://github.com/angular/angular",
+    "category": "Frontend",
+    "skills": [
+      "TypeScript",
+      "Angular",
+      "RxJS"
+    ],
+    "search_text": "TypeScript Angular RxJS",
+    "description": "Frontend reference project to study, adapt and contribute to.",
+    "stars": null,
+    "license": null,
+    "metrics_checked_at": null,
+    "source": "Curated reference seed; popularity, license and maintenance must be refreshed from GitHub before use",
+    "plan": [
+      "Read the README, license and contribution guide",
+      "Reproduce a minimal example with tests",
+      "Build an original extension and document the design",
+      "Publish a reproducible demo and request review"
+    ]
+  },
+  {
+    "id": "vuejs/core",
+    "full_name": "vuejs/core",
+    "url": "https://github.com/vuejs/core",
+    "category": "Frontend",
+    "skills": [
+      "TypeScript",
+      "Vue"
+    ],
+    "search_text": "TypeScript Vue",
+    "description": "Frontend reference project to study, adapt and contribute to.",
+    "stars": null,
+    "license": null,
+    "metrics_checked_at": null,
+    "source": "Curated reference seed; popularity, license and maintenance must be refreshed from GitHub before use",
+    "plan": [
+      "Read the README, license and contribution guide",
+      "Reproduce a minimal example with tests",
+      "Build an original extension and document the design",
+      "Publish a reproducible demo and request review"
+    ]
+  },
+  {
+    "id": "sveltejs/svelte",
+    "full_name": "sveltejs/svelte",
+    "url": "https://github.com/sveltejs/svelte",
+    "category": "Frontend",
+    "skills": [
+      "JavaScript",
+      "Svelte"
+    ],
+    "search_text": "JavaScript Svelte",
+    "description": "Frontend reference project to study, adapt and contribute to.",
+    "stars": null,
+    "license": null,
+    "metrics_checked_at": null,
+    "source": "Curated reference seed; popularity, license and maintenance must be refreshed from GitHub before use",
+    "plan": [
+      "Read the README, license and contribution guide",
+      "Reproduce a minimal example with tests",
+      "Build an original extension and document the design",
+      "Publish a reproducible demo and request review"
+    ]
+  },
+  {
+    "id": "mrdoob/three.js",
+    "full_name": "mrdoob/three.js",
+    "url": "https://github.com/mrdoob/three.js",
+    "category": "Frontend",
+    "skills": [
+      "JavaScript",
+      "Three.js",
+      "WebGL"
+    ],
+    "search_text": "JavaScript Three.js WebGL",
+    "description": "Frontend reference project to study, adapt and contribute to.",
+    "stars": null,
+    "license": null,
+    "metrics_checked_at": null,
+    "source": "Curated reference seed; popularity, license and maintenance must be refreshed from GitHub before use",
+    "plan": [
+      "Read the README, license and contribution guide",
+      "Reproduce a minimal example with tests",
+      "Build an original extension and document the design",
+      "Publish a reproducible demo and request review"
+    ]
+  },
+  {
+    "id": "vitejs/vite",
+    "full_name": "vitejs/vite",
+    "url": "https://github.com/vitejs/vite",
+    "category": "Frontend",
+    "skills": [
+      "TypeScript",
+      "Vite"
+    ],
+    "search_text": "TypeScript Vite",
+    "description": "Frontend reference project to study, adapt and contribute to.",
+    "stars": null,
+    "license": null,
+    "metrics_checked_at": null,
+    "source": "Curated reference seed; popularity, license and maintenance must be refreshed from GitHub before use",
+    "plan": [
+      "Read the README, license and contribution guide",
+      "Reproduce a minimal example with tests",
+      "Build an original extension and document the design",
+      "Publish a reproducible demo and request review"
+    ]
+  },
+  {
+    "id": "tailwindlabs/tailwindcss",
+    "full_name": "tailwindlabs/tailwindcss",
+    "url": "https://github.com/tailwindlabs/tailwindcss",
+    "category": "Frontend",
+    "skills": [
+      "CSS",
+      "Tailwind",
+      "CSS"
+    ],
+    "search_text": "CSS Tailwind CSS",
+    "description": "Frontend reference project to study, adapt and contribute to.",
+    "stars": null,
+    "license": null,
+    "metrics_checked_at": null,
+    "source": "Curated reference seed; popularity, license and maintenance must be refreshed from GitHub before use",
+    "plan": [
+      "Read the README, license and contribution guide",
+      "Reproduce a minimal example with tests",
+      "Build an original extension and document the design",
+      "Publish a reproducible demo and request review"
+    ]
+  },
+  {
+    "id": "pytorch/pytorch",
+    "full_name": "pytorch/pytorch",
+    "url": "https://github.com/pytorch/pytorch",
+    "category": "AI / ML",
+    "skills": [
+      "Python",
+      "PyTorch",
+      "C++"
+    ],
+    "search_text": "Python PyTorch C++",
+    "description": "AI / ML reference project to study, adapt and contribute to.",
+    "stars": null,
+    "license": null,
+    "metrics_checked_at": null,
+    "source": "Curated reference seed; popularity, license and maintenance must be refreshed from GitHub before use",
+    "plan": [
+      "Read the README, license and contribution guide",
+      "Reproduce a minimal example with tests",
+      "Build an original extension and document the design",
+      "Publish a reproducible demo and request review"
+    ]
+  },
+  {
+    "id": "huggingface/transformers",
+    "full_name": "huggingface/transformers",
+    "url": "https://github.com/huggingface/transformers",
+    "category": "AI / ML",
+    "skills": [
+      "Python",
+      "Transformers",
+      "NLP"
+    ],
+    "search_text": "Python Transformers NLP",
+    "description": "AI / ML reference project to study, adapt and contribute to.",
+    "stars": null,
+    "license": null,
+    "metrics_checked_at": null,
+    "source": "Curated reference seed; popularity, license and maintenance must be refreshed from GitHub before use",
+    "plan": [
+      "Read the README, license and contribution guide",
+      "Reproduce a minimal example with tests",
+      "Build an original extension and document the design",
+      "Publish a reproducible demo and request review"
+    ]
+  },
+  {
+    "id": "scikit-learn/scikit-learn",
+    "full_name": "scikit-learn/scikit-learn",
+    "url": "https://github.com/scikit-learn/scikit-learn",
+    "category": "AI / ML",
+    "skills": [
+      "Python",
+      "scikit-learn",
+      "Machine",
+      "Learning"
+    ],
+    "search_text": "Python scikit-learn Machine Learning",
+    "description": "AI / ML reference project to study, adapt and contribute to.",
+    "stars": null,
+    "license": null,
+    "metrics_checked_at": null,
+    "source": "Curated reference seed; popularity, license and maintenance must be refreshed from GitHub before use",
+    "plan": [
+      "Read the README, license and contribution guide",
+      "Reproduce a minimal example with tests",
+      "Build an original extension and document the design",
+      "Publish a reproducible demo and request review"
+    ]
+  },
+  {
+    "id": "tensorflow/tensorflow",
+    "full_name": "tensorflow/tensorflow",
+    "url": "https://github.com/tensorflow/tensorflow",
+    "category": "AI / ML",
+    "skills": [
+      "Python",
+      "TensorFlow"
+    ],
+    "search_text": "Python TensorFlow",
+    "description": "AI / ML reference project to study, adapt and contribute to.",
+    "stars": null,
+    "license": null,
+    "metrics_checked_at": null,
+    "source": "Curated reference seed; popularity, license and maintenance must be refreshed from GitHub before use",
+    "plan": [
+      "Read the README, license and contribution guide",
+      "Reproduce a minimal example with tests",
+      "Build an original extension and document the design",
+      "Publish a reproducible demo and request review"
+    ]
+  },
+  {
+    "id": "langchain-ai/langchain",
+    "full_name": "langchain-ai/langchain",
+    "url": "https://github.com/langchain-ai/langchain",
+    "category": "AI / ML",
+    "skills": [
+      "Python",
+      "LLM",
+      "RAG"
+    ],
+    "search_text": "Python LLM RAG",
+    "description": "AI / ML reference project to study, adapt and contribute to.",
+    "stars": null,
+    "license": null,
+    "metrics_checked_at": null,
+    "source": "Curated reference seed; popularity, license and maintenance must be refreshed from GitHub before use",
+    "plan": [
+      "Read the README, license and contribution guide",
+      "Reproduce a minimal example with tests",
+      "Build an original extension and document the design",
+      "Publish a reproducible demo and request review"
+    ]
+  },
+  {
+    "id": "ollama/ollama",
+    "full_name": "ollama/ollama",
+    "url": "https://github.com/ollama/ollama",
+    "category": "AI / ML",
+    "skills": [
+      "Go",
+      "LLM",
+      "Docker"
+    ],
+    "search_text": "Go LLM Docker",
+    "description": "AI / ML reference project to study, adapt and contribute to.",
+    "stars": null,
+    "license": null,
+    "metrics_checked_at": null,
+    "source": "Curated reference seed; popularity, license and maintenance must be refreshed from GitHub before use",
+    "plan": [
+      "Read the README, license and contribution guide",
+      "Reproduce a minimal example with tests",
+      "Build an original extension and document the design",
+      "Publish a reproducible demo and request review"
+    ]
+  },
+  {
+    "id": "jupyter/notebook",
+    "full_name": "jupyter/notebook",
+    "url": "https://github.com/jupyter/notebook",
+    "category": "AI / ML",
+    "skills": [
+      "Python",
+      "Jupyter"
+    ],
+    "search_text": "Python Jupyter",
+    "description": "AI / ML reference project to study, adapt and contribute to.",
+    "stars": null,
+    "license": null,
+    "metrics_checked_at": null,
+    "source": "Curated reference seed; popularity, license and maintenance must be refreshed from GitHub before use",
+    "plan": [
+      "Read the README, license and contribution guide",
+      "Reproduce a minimal example with tests",
+      "Build an original extension and document the design",
+      "Publish a reproducible demo and request review"
+    ]
+  },
+  {
+    "id": "openai/whisper",
+    "full_name": "openai/whisper",
+    "url": "https://github.com/openai/whisper",
+    "category": "AI / ML",
+    "skills": [
+      "Python",
+      "PyTorch",
+      "speech"
+    ],
+    "search_text": "Python PyTorch speech",
+    "description": "AI / ML reference project to study, adapt and contribute to.",
+    "stars": null,
+    "license": null,
+    "metrics_checked_at": null,
+    "source": "Curated reference seed; popularity, license and maintenance must be refreshed from GitHub before use",
+    "plan": [
+      "Read the README, license and contribution guide",
+      "Reproduce a minimal example with tests",
+      "Build an original extension and document the design",
+      "Publish a reproducible demo and request review"
+    ]
+  },
+  {
+    "id": "pandas-dev/pandas",
+    "full_name": "pandas-dev/pandas",
+    "url": "https://github.com/pandas-dev/pandas",
+    "category": "Data",
+    "skills": [
+      "Python",
+      "pandas",
+      "Data",
+      "Analysis"
+    ],
+    "search_text": "Python pandas Data Analysis",
+    "description": "Data reference project to study, adapt and contribute to.",
+    "stars": null,
+    "license": null,
+    "metrics_checked_at": null,
+    "source": "Curated reference seed; popularity, license and maintenance must be refreshed from GitHub before use",
+    "plan": [
+      "Read the README, license and contribution guide",
+      "Reproduce a minimal example with tests",
+      "Build an original extension and document the design",
+      "Publish a reproducible demo and request review"
+    ]
+  },
+  {
+    "id": "numpy/numpy",
+    "full_name": "numpy/numpy",
+    "url": "https://github.com/numpy/numpy",
+    "category": "Data",
+    "skills": [
+      "Python",
+      "NumPy"
+    ],
+    "search_text": "Python NumPy",
+    "description": "Data reference project to study, adapt and contribute to.",
+    "stars": null,
+    "license": null,
+    "metrics_checked_at": null,
+    "source": "Curated reference seed; popularity, license and maintenance must be refreshed from GitHub before use",
+    "plan": [
+      "Read the README, license and contribution guide",
+      "Reproduce a minimal example with tests",
+      "Build an original extension and document the design",
+      "Publish a reproducible demo and request review"
+    ]
+  },
+  {
+    "id": "apache/airflow",
+    "full_name": "apache/airflow",
+    "url": "https://github.com/apache/airflow",
+    "category": "Data",
+    "skills": [
+      "Python",
+      "Airflow",
+      "Docker"
+    ],
+    "search_text": "Python Airflow Docker",
+    "description": "Data reference project to study, adapt and contribute to.",
+    "stars": null,
+    "license": null,
+    "metrics_checked_at": null,
+    "source": "Curated reference seed; popularity, license and maintenance must be refreshed from GitHub before use",
+    "plan": [
+      "Read the README, license and contribution guide",
+      "Reproduce a minimal example with tests",
+      "Build an original extension and document the design",
+      "Publish a reproducible demo and request review"
+    ]
+  },
+  {
+    "id": "dbt-labs/dbt-core",
+    "full_name": "dbt-labs/dbt-core",
+    "url": "https://github.com/dbt-labs/dbt-core",
+    "category": "Data",
+    "skills": [
+      "Python",
+      "SQL",
+      "dbt"
+    ],
+    "search_text": "Python SQL dbt",
+    "description": "Data reference project to study, adapt and contribute to.",
+    "stars": null,
+    "license": null,
+    "metrics_checked_at": null,
+    "source": "Curated reference seed; popularity, license and maintenance must be refreshed from GitHub before use",
+    "plan": [
+      "Read the README, license and contribution guide",
+      "Reproduce a minimal example with tests",
+      "Build an original extension and document the design",
+      "Publish a reproducible demo and request review"
+    ]
+  },
+  {
+    "id": "duckdb/duckdb",
+    "full_name": "duckdb/duckdb",
+    "url": "https://github.com/duckdb/duckdb",
+    "category": "Data",
+    "skills": [
+      "SQL",
+      "C++",
+      "Python"
+    ],
+    "search_text": "SQL C++ Python",
+    "description": "Data reference project to study, adapt and contribute to.",
+    "stars": null,
+    "license": null,
+    "metrics_checked_at": null,
+    "source": "Curated reference seed; popularity, license and maintenance must be refreshed from GitHub before use",
+    "plan": [
+      "Read the README, license and contribution guide",
+      "Reproduce a minimal example with tests",
+      "Build an original extension and document the design",
+      "Publish a reproducible demo and request review"
+    ]
+  },
+  {
+    "id": "apache/spark",
+    "full_name": "apache/spark",
+    "url": "https://github.com/apache/spark",
+    "category": "Data",
+    "skills": [
+      "Python",
+      "Java",
+      "Spark"
+    ],
+    "search_text": "Python Java Spark",
+    "description": "Data reference project to study, adapt and contribute to.",
+    "stars": null,
+    "license": null,
+    "metrics_checked_at": null,
+    "source": "Curated reference seed; popularity, license and maintenance must be refreshed from GitHub before use",
+    "plan": [
+      "Read the README, license and contribution guide",
+      "Reproduce a minimal example with tests",
+      "Build an original extension and document the design",
+      "Publish a reproducible demo and request review"
+    ]
+  },
+  {
+    "id": "postgres/postgres",
+    "full_name": "postgres/postgres",
+    "url": "https://github.com/postgres/postgres",
+    "category": "Data",
+    "skills": [
+      "C",
+      "PostgreSQL",
+      "SQL"
+    ],
+    "search_text": "C PostgreSQL SQL",
+    "description": "Data reference project to study, adapt and contribute to.",
+    "stars": null,
+    "license": null,
+    "metrics_checked_at": null,
+    "source": "Curated reference seed; popularity, license and maintenance must be refreshed from GitHub before use",
+    "plan": [
+      "Read the README, license and contribution guide",
+      "Reproduce a minimal example with tests",
+      "Build an original extension and document the design",
+      "Publish a reproducible demo and request review"
+    ]
+  },
+  {
+    "id": "redis/redis",
+    "full_name": "redis/redis",
+    "url": "https://github.com/redis/redis",
+    "category": "Data",
+    "skills": [
+      "C",
+      "Redis"
+    ],
+    "search_text": "C Redis",
+    "description": "Data reference project to study, adapt and contribute to.",
+    "stars": null,
+    "license": null,
+    "metrics_checked_at": null,
+    "source": "Curated reference seed; popularity, license and maintenance must be refreshed from GitHub before use",
+    "plan": [
+      "Read the README, license and contribution guide",
+      "Reproduce a minimal example with tests",
+      "Build an original extension and document the design",
+      "Publish a reproducible demo and request review"
+    ]
+  },
+  {
+    "id": "kubernetes/kubernetes",
+    "full_name": "kubernetes/kubernetes",
+    "url": "https://github.com/kubernetes/kubernetes",
+    "category": "Cloud / DevOps",
+    "skills": [
+      "Go",
+      "Kubernetes",
+      "Docker"
+    ],
+    "search_text": "Go Kubernetes Docker",
+    "description": "Cloud / DevOps reference project to study, adapt and contribute to.",
+    "stars": null,
+    "license": null,
+    "metrics_checked_at": null,
+    "source": "Curated reference seed; popularity, license and maintenance must be refreshed from GitHub before use",
+    "plan": [
+      "Read the README, license and contribution guide",
+      "Reproduce a minimal example with tests",
+      "Build an original extension and document the design",
+      "Publish a reproducible demo and request review"
+    ]
+  },
+  {
+    "id": "docker/compose",
+    "full_name": "docker/compose",
+    "url": "https://github.com/docker/compose",
+    "category": "Cloud / DevOps",
+    "skills": [
+      "Go",
+      "Docker",
+      "Compose"
+    ],
+    "search_text": "Go Docker Compose",
+    "description": "Cloud / DevOps reference project to study, adapt and contribute to.",
+    "stars": null,
+    "license": null,
+    "metrics_checked_at": null,
+    "source": "Curated reference seed; popularity, license and maintenance must be refreshed from GitHub before use",
+    "plan": [
+      "Read the README, license and contribution guide",
+      "Reproduce a minimal example with tests",
+      "Build an original extension and document the design",
+      "Publish a reproducible demo and request review"
+    ]
+  },
+  {
+    "id": "prometheus/prometheus",
+    "full_name": "prometheus/prometheus",
+    "url": "https://github.com/prometheus/prometheus",
+    "category": "Cloud / DevOps",
+    "skills": [
+      "Go",
+      "Prometheus",
+      "monitoring"
+    ],
+    "search_text": "Go Prometheus monitoring",
+    "description": "Cloud / DevOps reference project to study, adapt and contribute to.",
+    "stars": null,
+    "license": null,
+    "metrics_checked_at": null,
+    "source": "Curated reference seed; popularity, license and maintenance must be refreshed from GitHub before use",
+    "plan": [
+      "Read the README, license and contribution guide",
+      "Reproduce a minimal example with tests",
+      "Build an original extension and document the design",
+      "Publish a reproducible demo and request review"
+    ]
+  },
+  {
+    "id": "grafana/grafana",
+    "full_name": "grafana/grafana",
+    "url": "https://github.com/grafana/grafana",
+    "category": "Cloud / DevOps",
+    "skills": [
+      "TypeScript",
+      "Go",
+      "Grafana"
+    ],
+    "search_text": "TypeScript Go Grafana",
+    "description": "Cloud / DevOps reference project to study, adapt and contribute to.",
+    "stars": null,
+    "license": null,
+    "metrics_checked_at": null,
+    "source": "Curated reference seed; popularity, license and maintenance must be refreshed from GitHub before use",
+    "plan": [
+      "Read the README, license and contribution guide",
+      "Reproduce a minimal example with tests",
+      "Build an original extension and document the design",
+      "Publish a reproducible demo and request review"
+    ]
+  },
+  {
+    "id": "ansible/ansible",
+    "full_name": "ansible/ansible",
+    "url": "https://github.com/ansible/ansible",
+    "category": "Cloud / DevOps",
+    "skills": [
+      "Python",
+      "Ansible",
+      "automation"
+    ],
+    "search_text": "Python Ansible automation",
+    "description": "Cloud / DevOps reference project to study, adapt and contribute to.",
+    "stars": null,
+    "license": null,
+    "metrics_checked_at": null,
+    "source": "Curated reference seed; popularity, license and maintenance must be refreshed from GitHub before use",
+    "plan": [
+      "Read the README, license and contribution guide",
+      "Reproduce a minimal example with tests",
+      "Build an original extension and document the design",
+      "Publish a reproducible demo and request review"
+    ]
+  },
+  {
+    "id": "helm/helm",
+    "full_name": "helm/helm",
+    "url": "https://github.com/helm/helm",
+    "category": "Cloud / DevOps",
+    "skills": [
+      "Go",
+      "Helm",
+      "Kubernetes"
+    ],
+    "search_text": "Go Helm Kubernetes",
+    "description": "Cloud / DevOps reference project to study, adapt and contribute to.",
+    "stars": null,
+    "license": null,
+    "metrics_checked_at": null,
+    "source": "Curated reference seed; popularity, license and maintenance must be refreshed from GitHub before use",
+    "plan": [
+      "Read the README, license and contribution guide",
+      "Reproduce a minimal example with tests",
+      "Build an original extension and document the design",
+      "Publish a reproducible demo and request review"
+    ]
+  },
+  {
+    "id": "argoproj/argo-cd",
+    "full_name": "argoproj/argo-cd",
+    "url": "https://github.com/argoproj/argo-cd",
+    "category": "Cloud / DevOps",
+    "skills": [
+      "Go",
+      "Kubernetes",
+      "GitOps"
+    ],
+    "search_text": "Go Kubernetes GitOps",
+    "description": "Cloud / DevOps reference project to study, adapt and contribute to.",
+    "stars": null,
+    "license": null,
+    "metrics_checked_at": null,
+    "source": "Curated reference seed; popularity, license and maintenance must be refreshed from GitHub before use",
+    "plan": [
+      "Read the README, license and contribution guide",
+      "Reproduce a minimal example with tests",
+      "Build an original extension and document the design",
+      "Publish a reproducible demo and request review"
+    ]
+  },
+  {
+    "id": "actions/starter-workflows",
+    "full_name": "actions/starter-workflows",
+    "url": "https://github.com/actions/starter-workflows",
+    "category": "Cloud / DevOps",
+    "skills": [
+      "YAML",
+      "GitHub",
+      "Actions",
+      "CI/CD"
+    ],
+    "search_text": "YAML GitHub Actions CI/CD",
+    "description": "Cloud / DevOps reference project to study, adapt and contribute to.",
+    "stars": null,
+    "license": null,
+    "metrics_checked_at": null,
+    "source": "Curated reference seed; popularity, license and maintenance must be refreshed from GitHub before use",
+    "plan": [
+      "Read the README, license and contribution guide",
+      "Reproduce a minimal example with tests",
+      "Build an original extension and document the design",
+      "Publish a reproducible demo and request review"
+    ]
+  },
+  {
+    "id": "OWASP/juice-shop",
+    "full_name": "OWASP/juice-shop",
+    "url": "https://github.com/OWASP/juice-shop",
+    "category": "Security",
+    "skills": [
+      "JavaScript",
+      "TypeScript",
+      "OWASP",
+      "security"
+    ],
+    "search_text": "JavaScript TypeScript OWASP security",
+    "description": "Security reference project to study, adapt and contribute to.",
+    "stars": null,
+    "license": null,
+    "metrics_checked_at": null,
+    "source": "Curated reference seed; popularity, license and maintenance must be refreshed from GitHub before use",
+    "plan": [
+      "Read the README, license and contribution guide",
+      "Reproduce a minimal example with tests",
+      "Build an original extension and document the design",
+      "Publish a reproducible demo and request review"
+    ]
+  },
+  {
+    "id": "zaproxy/zaproxy",
+    "full_name": "zaproxy/zaproxy",
+    "url": "https://github.com/zaproxy/zaproxy",
+    "category": "Security",
+    "skills": [
+      "Java",
+      "OWASP",
+      "security"
+    ],
+    "search_text": "Java OWASP security",
+    "description": "Security reference project to study, adapt and contribute to.",
+    "stars": null,
+    "license": null,
+    "metrics_checked_at": null,
+    "source": "Curated reference seed; popularity, license and maintenance must be refreshed from GitHub before use",
+    "plan": [
+      "Read the README, license and contribution guide",
+      "Reproduce a minimal example with tests",
+      "Build an original extension and document the design",
+      "Publish a reproducible demo and request review"
+    ]
+  },
+  {
+    "id": "aquasecurity/trivy",
+    "full_name": "aquasecurity/trivy",
+    "url": "https://github.com/aquasecurity/trivy",
+    "category": "Security",
+    "skills": [
+      "Go",
+      "Docker",
+      "security"
+    ],
+    "search_text": "Go Docker security",
+    "description": "Security reference project to study, adapt and contribute to.",
+    "stars": null,
+    "license": null,
+    "metrics_checked_at": null,
+    "source": "Curated reference seed; popularity, license and maintenance must be refreshed from GitHub before use",
+    "plan": [
+      "Read the README, license and contribution guide",
+      "Reproduce a minimal example with tests",
+      "Build an original extension and document the design",
+      "Publish a reproducible demo and request review"
+    ]
+  },
+  {
+    "id": "semgrep/semgrep",
+    "full_name": "semgrep/semgrep",
+    "url": "https://github.com/semgrep/semgrep",
+    "category": "Security",
+    "skills": [
+      "Python",
+      "security",
+      "static",
+      "analysis"
+    ],
+    "search_text": "Python security static analysis",
+    "description": "Security reference project to study, adapt and contribute to.",
+    "stars": null,
+    "license": null,
+    "metrics_checked_at": null,
+    "source": "Curated reference seed; popularity, license and maintenance must be refreshed from GitHub before use",
+    "plan": [
+      "Read the README, license and contribution guide",
+      "Reproduce a minimal example with tests",
+      "Build an original extension and document the design",
+      "Publish a reproducible demo and request review"
+    ]
+  },
+  {
+    "id": "keycloak/keycloak",
+    "full_name": "keycloak/keycloak",
+    "url": "https://github.com/keycloak/keycloak",
+    "category": "Security",
+    "skills": [
+      "Java",
+      "OAuth2",
+      "JWT"
+    ],
+    "search_text": "Java OAuth2 JWT",
+    "description": "Security reference project to study, adapt and contribute to.",
+    "stars": null,
+    "license": null,
+    "metrics_checked_at": null,
+    "source": "Curated reference seed; popularity, license and maintenance must be refreshed from GitHub before use",
+    "plan": [
+      "Read the README, license and contribution guide",
+      "Reproduce a minimal example with tests",
+      "Build an original extension and document the design",
+      "Publish a reproducible demo and request review"
+    ]
+  },
+  {
+    "id": "getsops/sops",
+    "full_name": "getsops/sops",
+    "url": "https://github.com/getsops/sops",
+    "category": "Security",
+    "skills": [
+      "Go",
+      "encryption",
+      "security"
+    ],
+    "search_text": "Go encryption security",
+    "description": "Security reference project to study, adapt and contribute to.",
+    "stars": null,
+    "license": null,
+    "metrics_checked_at": null,
+    "source": "Curated reference seed; popularity, license and maintenance must be refreshed from GitHub before use",
+    "plan": [
+      "Read the README, license and contribution guide",
+      "Reproduce a minimal example with tests",
+      "Build an original extension and document the design",
+      "Publish a reproducible demo and request review"
+    ]
+  },
+  {
+    "id": "free5gc/free5gc",
+    "full_name": "free5gc/free5gc",
+    "url": "https://github.com/free5gc/free5gc",
+    "category": "Telecom",
+    "skills": [
+      "Go",
+      "5G",
+      "5G-core",
+      "telecom"
+    ],
+    "search_text": "Go 5G 5G-core telecom",
+    "description": "Telecom reference project to study, adapt and contribute to.",
+    "stars": null,
+    "license": null,
+    "metrics_checked_at": null,
+    "source": "Curated reference seed; popularity, license and maintenance must be refreshed from GitHub before use",
+    "plan": [
+      "Read the README, license and contribution guide",
+      "Reproduce a minimal example with tests",
+      "Build an original extension and document the design",
+      "Publish a reproducible demo and request review"
+    ]
+  },
+  {
+    "id": "open5gs/open5gs",
+    "full_name": "open5gs/open5gs",
+    "url": "https://github.com/open5gs/open5gs",
+    "category": "Telecom",
+    "skills": [
+      "C",
+      "5G",
+      "telecom"
+    ],
+    "search_text": "C 5G telecom",
+    "description": "Telecom reference project to study, adapt and contribute to.",
+    "stars": null,
+    "license": null,
+    "metrics_checked_at": null,
+    "source": "Curated reference seed; popularity, license and maintenance must be refreshed from GitHub before use",
+    "plan": [
+      "Read the README, license and contribution guide",
+      "Reproduce a minimal example with tests",
+      "Build an original extension and document the design",
+      "Publish a reproducible demo and request review"
+    ]
+  },
+  {
+    "id": "aligungr/UERANSIM",
+    "full_name": "aligungr/UERANSIM",
+    "url": "https://github.com/aligungr/UERANSIM",
+    "category": "Telecom",
+    "skills": [
+      "C++",
+      "5G",
+      "telecom"
+    ],
+    "search_text": "C++ 5G telecom",
+    "description": "Telecom reference project to study, adapt and contribute to.",
+    "stars": null,
+    "license": null,
+    "metrics_checked_at": null,
+    "source": "Curated reference seed; popularity, license and maintenance must be refreshed from GitHub before use",
+    "plan": [
+      "Read the README, license and contribution guide",
+      "Reproduce a minimal example with tests",
+      "Build an original extension and document the design",
+      "Publish a reproducible demo and request review"
+    ]
+  },
+  {
+    "id": "srsran/srsRAN_Project",
+    "full_name": "srsran/srsRAN_Project",
+    "url": "https://github.com/srsran/srsRAN_Project",
+    "category": "Telecom",
+    "skills": [
+      "C++",
+      "5G",
+      "telecom"
+    ],
+    "search_text": "C++ 5G telecom",
+    "description": "Telecom reference project to study, adapt and contribute to.",
+    "stars": null,
+    "license": null,
+    "metrics_checked_at": null,
+    "source": "Curated reference seed; popularity, license and maintenance must be refreshed from GitHub before use",
+    "plan": [
+      "Read the README, license and contribution guide",
+      "Reproduce a minimal example with tests",
+      "Build an original extension and document the design",
+      "Publish a reproducible demo and request review"
+    ]
+  },
+  {
+    "id": "FRRouting/frr",
+    "full_name": "FRRouting/frr",
+    "url": "https://github.com/FRRouting/frr",
+    "category": "Telecom",
+    "skills": [
+      "C",
+      "BGP",
+      "OSPF",
+      "network"
+    ],
+    "search_text": "C BGP OSPF network",
+    "description": "Telecom reference project to study, adapt and contribute to.",
+    "stars": null,
+    "license": null,
+    "metrics_checked_at": null,
+    "source": "Curated reference seed; popularity, license and maintenance must be refreshed from GitHub before use",
+    "plan": [
+      "Read the README, license and contribution guide",
+      "Reproduce a minimal example with tests",
+      "Build an original extension and document the design",
+      "Publish a reproducible demo and request review"
+    ]
+  },
+  {
+    "id": "sonic-net/sonic-buildimage",
+    "full_name": "sonic-net/sonic-buildimage",
+    "url": "https://github.com/sonic-net/sonic-buildimage",
+    "category": "Telecom",
+    "skills": [
+      "Python",
+      "Linux",
+      "network"
+    ],
+    "search_text": "Python Linux network",
+    "description": "Telecom reference project to study, adapt and contribute to.",
+    "stars": null,
+    "license": null,
+    "metrics_checked_at": null,
+    "source": "Curated reference seed; popularity, license and maintenance must be refreshed from GitHub before use",
+    "plan": [
+      "Read the README, license and contribution guide",
+      "Reproduce a minimal example with tests",
+      "Build an original extension and document the design",
+      "Publish a reproducible demo and request review"
+    ]
+  },
+  {
+    "id": "NVIDIA/sionna",
+    "full_name": "NVIDIA/sionna",
+    "url": "https://github.com/NVIDIA/sionna",
+    "category": "Telecom",
+    "skills": [
+      "Python",
+      "TensorFlow",
+      "wireless"
+    ],
+    "search_text": "Python TensorFlow wireless",
+    "description": "Telecom reference project to study, adapt and contribute to.",
+    "stars": null,
+    "license": null,
+    "metrics_checked_at": null,
+    "source": "Curated reference seed; popularity, license and maintenance must be refreshed from GitHub before use",
+    "plan": [
+      "Read the README, license and contribution guide",
+      "Reproduce a minimal example with tests",
+      "Build an original extension and document the design",
+      "Publish a reproducible demo and request review"
+    ]
+  },
+  {
+    "id": "n8n-io/n8n",
+    "full_name": "n8n-io/n8n",
+    "url": "https://github.com/n8n-io/n8n",
+    "category": "Automation",
+    "skills": [
+      "TypeScript",
+      "Node.js",
+      "automation"
+    ],
+    "search_text": "TypeScript Node.js automation",
+    "description": "Automation reference project to study, adapt and contribute to.",
+    "stars": null,
+    "license": null,
+    "metrics_checked_at": null,
+    "source": "Curated reference seed; popularity, license and maintenance must be refreshed from GitHub before use",
+    "plan": [
+      "Read the README, license and contribution guide",
+      "Reproduce a minimal example with tests",
+      "Build an original extension and document the design",
+      "Publish a reproducible demo and request review"
+    ]
+  },
+  {
+    "id": "PrefectHQ/prefect",
+    "full_name": "PrefectHQ/prefect",
+    "url": "https://github.com/PrefectHQ/prefect",
+    "category": "Automation",
+    "skills": [
+      "Python",
+      "automation",
+      "workflows"
+    ],
+    "search_text": "Python automation workflows",
+    "description": "Automation reference project to study, adapt and contribute to.",
+    "stars": null,
+    "license": null,
+    "metrics_checked_at": null,
+    "source": "Curated reference seed; popularity, license and maintenance must be refreshed from GitHub before use",
+    "plan": [
+      "Read the README, license and contribution guide",
+      "Reproduce a minimal example with tests",
+      "Build an original extension and document the design",
+      "Publish a reproducible demo and request review"
+    ]
+  },
+  {
+    "id": "dagster-io/dagster",
+    "full_name": "dagster-io/dagster",
+    "url": "https://github.com/dagster-io/dagster",
+    "category": "Automation",
+    "skills": [
+      "Python",
+      "data",
+      "workflows"
+    ],
+    "search_text": "Python data workflows",
+    "description": "Automation reference project to study, adapt and contribute to.",
+    "stars": null,
+    "license": null,
+    "metrics_checked_at": null,
+    "source": "Curated reference seed; popularity, license and maintenance must be refreshed from GitHub before use",
+    "plan": [
+      "Read the README, license and contribution guide",
+      "Reproduce a minimal example with tests",
+      "Build an original extension and document the design",
+      "Publish a reproducible demo and request review"
+    ]
+  },
+  {
+    "id": "microsoft/playwright",
+    "full_name": "microsoft/playwright",
+    "url": "https://github.com/microsoft/playwright",
+    "category": "Automation",
+    "skills": [
+      "TypeScript",
+      "testing",
+      "automation"
+    ],
+    "search_text": "TypeScript testing automation",
+    "description": "Automation reference project to study, adapt and contribute to.",
+    "stars": null,
+    "license": null,
+    "metrics_checked_at": null,
+    "source": "Curated reference seed; popularity, license and maintenance must be refreshed from GitHub before use",
+    "plan": [
+      "Read the README, license and contribution guide",
+      "Reproduce a minimal example with tests",
+      "Build an original extension and document the design",
+      "Publish a reproducible demo and request review"
+    ]
+  },
+  {
+    "id": "pytest-dev/pytest",
+    "full_name": "pytest-dev/pytest",
+    "url": "https://github.com/pytest-dev/pytest",
+    "category": "Automation",
+    "skills": [
+      "Python",
+      "pytest",
+      "testing"
+    ],
+    "search_text": "Python pytest testing",
+    "description": "Automation reference project to study, adapt and contribute to.",
+    "stars": null,
+    "license": null,
+    "metrics_checked_at": null,
+    "source": "Curated reference seed; popularity, license and maintenance must be refreshed from GitHub before use",
+    "plan": [
+      "Read the README, license and contribution guide",
+      "Reproduce a minimal example with tests",
+      "Build an original extension and document the design",
+      "Publish a reproducible demo and request review"
+    ]
+  }
+]

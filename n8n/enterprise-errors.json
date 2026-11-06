@@ -1,0 +1,118 @@
+{
+  "name": "CODEVERSE \u00b7 Enterprise CI failure monitor",
+  "nodes": [
+    {
+      "parameters": {
+        "rule": {
+          "interval": [
+            {
+              "field": "days",
+              "triggerAtHour": 9
+            }
+          ]
+        }
+      },
+      "id": "daily-error-audit",
+      "name": "Daily error audit",
+      "type": "n8n-nodes-base.scheduleTrigger",
+      "typeVersion": 1.2,
+      "position": [
+        240,
+        250
+      ]
+    },
+    {
+      "parameters": {},
+      "id": "manual-audit",
+      "name": "Manual audit",
+      "type": "n8n-nodes-base.manualTrigger",
+      "typeVersion": 1,
+      "position": [
+        240,
+        450
+      ]
+    },
+    {
+      "parameters": {
+        "method": "GET",
+        "url": "https://api.github.com/repos/OWNER/REPO/actions/runs",
+        "sendQuery": true,
+        "queryParameters": {
+          "parameters": [
+            {
+              "name": "status",
+              "value": "failure"
+            },
+            {
+              "name": "per_page",
+              "value": "30"
+            }
+          ]
+        },
+        "options": {}
+      },
+      "id": "fetch-failed-runs",
+      "name": "Fetch failed runs",
+      "type": "n8n-nodes-base.httpRequest",
+      "typeVersion": 4.2,
+      "position": [
+        490,
+        250
+      ]
+    },
+    {
+      "parameters": {
+        "jsCode": "const payload=$input.first()?.json || {};\nreturn (payload.workflow_runs || []).filter(r=>r.conclusion==='failure').map(r=>({json:{\n  source:'github-actions', severity:'high', status:'open',\n  run_id:r.id, title:r.name || 'Failed CI workflow',\n  repository:r.repository?.full_name || 'unknown',\n  url:r.html_url, detected_at:r.updated_at,\n  remediation:'Inspect failed jobs and logs on GitHub. Do not assume root cause from the run status.'\n}}));"
+      },
+      "id": "normalize-failure-signals",
+      "name": "Normalize failure signals",
+      "type": "n8n-nodes-base.code",
+      "typeVersion": 2,
+      "position": [
+        730,
+        250
+      ]
+    }
+  ],
+  "connections": {
+    "Daily error audit": {
+      "main": [
+        [
+          {
+            "node": "Fetch failed runs",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Manual audit": {
+      "main": [
+        [
+          {
+            "node": "Fetch failed runs",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Fetch failed runs": {
+      "main": [
+        [
+          {
+            "node": "Normalize failure signals",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    }
+  },
+  "settings": {
+    "executionOrder": "v1"
+  },
+  "active": false,
+  "pinData": {},
+  "tags": []
+}

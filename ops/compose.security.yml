@@ -1,0 +1,53 @@
+services:
+  api:
+    build:
+      context: ..
+      dockerfile: ops/Dockerfile.api
+    env_file: ../.env.security
+    environment:
+      CODEVERSE_SECURE_MODE: "1"
+      CODEVERSE_REQUIRE_ADMIN_MFA: "1"
+      CODEVERSE_METRICS_TOKEN_FILE: /run/secrets/codeverse_metrics_token
+    secrets:
+      - codeverse_metrics_token
+    ports:
+      - "127.0.0.1:8000:8000"
+    restart: unless-stopped
+    networks: [security_net]
+  prometheus:
+    image: prom/prometheus:v3.6.0
+    command: ["--config.file=/etc/prometheus/prometheus.yml", "--storage.tsdb.path=/prometheus", "--storage.tsdb.retention.time=14d"]
+    volumes:
+      - ./prometheus/prometheus.yml:/etc/prometheus/prometheus.yml:ro
+      - prometheus-data:/prometheus
+    secrets:
+      - source: codeverse_metrics_token
+        target: /etc/prometheus/metrics_token
+    ports:
+      - "127.0.0.1:9090:9090"
+    networks: [security_net]
+    restart: unless-stopped
+  grafana:
+    image: grafana/grafana:12.2.0
+    environment:
+      GF_SECURITY_ADMIN_USER: ${GRAFANA_ADMIN_USER:?Set GRAFANA_ADMIN_USER}
+      GF_SECURITY_ADMIN_PASSWORD: ${GRAFANA_ADMIN_PASSWORD:?Set GRAFANA_ADMIN_PASSWORD}
+      GF_AUTH_ANONYMOUS_ENABLED: "false"
+      GF_USERS_ALLOW_SIGN_UP: "false"
+    volumes:
+      - ./grafana/provisioning:/etc/grafana/provisioning:ro
+      - ./grafana/dashboards:/etc/grafana/dashboards:ro
+      - grafana-data:/var/lib/grafana
+    ports:
+      - "127.0.0.1:3000:3000"
+    networks: [security_net]
+    depends_on: [prometheus]
+    restart: unless-stopped
+secrets:
+  codeverse_metrics_token:
+    file: ./secrets/metrics_token
+volumes:
+  prometheus-data: {}
+  grafana-data: {}
+networks:
+  security_net: {}

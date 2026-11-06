@@ -1,0 +1,10 @@
+apiVersion: 1
+providers:
+  - name: CODEVERSE Security
+    orgId: 1
+    folder: CODEVERSE Security Operations
+    type: file
+    disableDeletion: false
+    editable: false
+    options:
+      path: /etc/grafana/dashboards

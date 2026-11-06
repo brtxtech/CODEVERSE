@@ -1,0 +1,17 @@
+node_modules
+dist
+.git
+.env
+.env.security
+.env.production
+.env.integrations
+*.zip
+preserved-release-candidate
+__pycache__
+.pytest_cache
+.env.deploy
+.env.worker
+
+.dev-python/
+
+.qa/

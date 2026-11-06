@@ -1,0 +1,120 @@
+{
+  "name": "CODEVERSE \u00b7 Social release drafts (review first)",
+  "nodes": [
+    {
+      "parameters": {
+        "rule": {
+          "interval": [
+            {
+              "field": "days",
+              "triggerAtHour": 8
+            }
+          ]
+        }
+      },
+      "id": "every-morning",
+      "name": "Every morning",
+      "type": "n8n-nodes-base.scheduleTrigger",
+      "typeVersion": 1.2,
+      "position": [
+        240,
+        300
+      ]
+    },
+    {
+      "parameters": {},
+      "id": "manual-test",
+      "name": "Manual test",
+      "type": "n8n-nodes-base.manualTrigger",
+      "typeVersion": 1,
+      "position": [
+        240,
+        500
+      ]
+    },
+    {
+      "parameters": {
+        "method": "GET",
+        "url": "https://api.github.com/repos/OWNER/REPO/releases",
+        "sendQuery": true,
+        "queryParameters": {
+          "parameters": [
+            {
+              "name": "per_page",
+              "value": "5"
+            }
+          ]
+        },
+        "options": {
+          "response": {
+            "response": {
+              "responseFormat": "json"
+            }
+          }
+        }
+      },
+      "id": "fetch-releases",
+      "name": "Fetch releases",
+      "type": "n8n-nodes-base.httpRequest",
+      "typeVersion": 4.2,
+      "position": [
+        480,
+        300
+      ]
+    },
+    {
+      "parameters": {
+        "jsCode": "// PUBLIC release announcements only. Drafts require human approval before publishing.\nconst items = $input.all();\nreturn items.filter(x => x.json && x.json.html_url).slice(0,5).map(({json:r}) => ({json:{\n  source:'github-release', status:'PENDING_REVIEW',\n  title: r.name || r.tag_name,\n  link:r.html_url, published_at:r.published_at,\n  linkedin_draft: `We just released ${r.name || r.tag_name}!\\n\\nExplore the changes: ${r.html_url}\\n\\n#OpenSource #SoftwareEngineering`,\n  note:'Copy this draft manually after verifying accuracy; no social content is automatically posted.'\n}}));"
+      },
+      "id": "draft-social-posts",
+      "name": "Draft social posts",
+      "type": "n8n-nodes-base.code",
+      "typeVersion": 2,
+      "position": [
+        720,
+        300
+      ]
+    }
+  ],
+  "connections": {
+    "Every morning": {
+      "main": [
+        [
+          {
+            "node": "Fetch releases",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Manual test": {
+      "main": [
+        [
+          {
+            "node": "Fetch releases",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Fetch releases": {
+      "main": [
+        [
+          {
+            "node": "Draft social posts",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    }
+  },
+  "settings": {
+    "executionOrder": "v1"
+  },
+  "active": false,
+  "pinData": {},
+  "tags": []
+}

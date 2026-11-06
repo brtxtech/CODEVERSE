@@ -1,0 +1,3489 @@
+{
+  "schemaVersion": "1.0.0",
+  "description": "CODEVERSE technology catalog: identities are design metadata, not proof of use.",
+  "categories": [
+    {
+      "name": "Languages",
+      "color": "#a7aec8"
+    },
+    {
+      "name": "Frontend",
+      "color": "#ed8e81"
+    },
+    {
+      "name": "3D & Visualization",
+      "color": "#e1aa77"
+    },
+    {
+      "name": "Backend",
+      "color": "#90afd4"
+    },
+    {
+      "name": "Databases",
+      "color": "#d9a27a"
+    },
+    {
+      "name": "AI & Machine Learning",
+      "color": "#bd9ae8"
+    },
+    {
+      "name": "Deep Learning",
+      "color": "#bd9ae8"
+    },
+    {
+      "name": "LLM & Generative AI",
+      "color": "#bd9ae8"
+    },
+    {
+      "name": "AI Techniques",
+      "color": "#bd9ae8"
+    },
+    {
+      "name": "Computer Vision",
+      "color": "#bb9bdf"
+    },
+    {
+      "name": "NLP",
+      "color": "#bd9ae8"
+    },
+    {
+      "name": "MLOps",
+      "color": "#98cdbb"
+    },
+    {
+      "name": "DevOps",
+      "color": "#86c5b5"
+    },
+    {
+      "name": "Cloud",
+      "color": "#86c5b5"
+    },
+    {
+      "name": "Networking & Telecom",
+      "color": "#8ac8db"
+    },
+    {
+      "name": "Security",
+      "color": "#83b6bd"
+    },
+    {
+      "name": "Data Engineering",
+      "color": "#d6ac84"
+    },
+    {
+      "name": "Testing",
+      "color": "#b9c3a6"
+    },
+    {
+      "name": "Mobile",
+      "color": "#eeaf95"
+    },
+    {
+      "name": "Build & Tooling",
+      "color": "#b7b9ce"
+    },
+    {
+      "name": "Engineering Skills",
+      "color": "#c9c4b3"
+    },
+    {
+      "name": "Telecommunications & Networking",
+      "color": "#58bbac"
+    }
+  ],
+  "technologies": [
+    {
+      "id": "python",
+      "name": "Python",
+      "category": "Languages",
+      "family": "language",
+      "landmark": "twin",
+      "color": "#a7aec8",
+      "detection": {
+        "kind": "manual-or-source-evidence"
+      }
+    },
+    {
+      "id": "javascript",
+      "name": "JavaScript",
+      "category": "Languages",
+      "family": "language",
+      "landmark": "tower",
+      "color": "#a7aec8",
+      "detection": {
+        "kind": "manual-or-source-evidence"
+      }
+    },
+    {
+      "id": "typescript",
+      "name": "TypeScript",
+      "category": "Languages",
+      "family": "language",
+      "landmark": "prism",
+      "color": "#a7aec8",
+      "detection": {
+        "kind": "manual-or-source-evidence"
+      }
+    },
+    {
+      "id": "java",
+      "name": "Java",
+      "category": "Languages",
+      "family": "general",
+      "landmark": "tower",
+      "color": "#a7aec8",
+      "detection": {
+        "kind": "manual-or-source-evidence"
+      }
+    },
+    {
+      "id": "c",
+      "name": "C",
+      "category": "Languages",
+      "family": "general",
+      "landmark": "tower",
+      "color": "#a7aec8",
+      "detection": {
+        "kind": "manual-or-source-evidence"
+      }
+    },
+    {
+      "id": "cpp",
+      "name": "C++",
+      "category": "Languages",
+      "family": "general",
+      "landmark": "tower",
+      "color": "#a7aec8",
+      "detection": {
+        "kind": "manual-or-source-evidence"
+      }
+    },
+    {
+      "id": "csharp",
+      "name": "C#",
+      "category": "Languages",
+      "family": "general",
+      "landmark": "tower",
+      "color": "#a7aec8",
+      "detection": {
+        "kind": "manual-or-source-evidence"
+      }
+    },
+    {
+      "id": "rust",
+      "name": "Rust",
+      "category": "Languages",
+      "family": "language",
+      "landmark": "gear",
+      "color": "#a7aec8",
+      "detection": {
+        "kind": "manual-or-source-evidence"
+      }
+    },
+    {
+      "id": "go",
+      "name": "Go",
+      "category": "Languages",
+      "family": "language",
+      "landmark": "turbine",
+      "color": "#a7aec8",
+      "detection": {
+        "kind": "manual-or-source-evidence"
+      }
+    },
+    {
+      "id": "kotlin",
+      "name": "Kotlin",
+      "category": "Languages",
+      "family": "general",
+      "landmark": "tower",
+      "color": "#a7aec8",
+      "detection": {
+        "kind": "manual-or-source-evidence"
+      }
+    },
+    {
+      "id": "swift",
+      "name": "Swift",
+      "category": "Languages",
+      "family": "general",
+      "landmark": "tower",
+      "color": "#a7aec8",
+      "detection": {
+        "kind": "manual-or-source-evidence"
+      }
+    },
+    {
+      "id": "php",
+      "name": "PHP",
+      "category": "Languages",
+      "family": "general",
+      "landmark": "tower",
+      "color": "#a7aec8",
+      "detection": {
+        "kind": "manual-or-source-evidence"
+      }
+    },
+    {
+      "id": "ruby",
+      "name": "Ruby",
+      "category": "Languages",
+      "family": "general",
+      "landmark": "tower",
+      "color": "#a7aec8",
+      "detection": {
+        "kind": "manual-or-source-evidence"
+      }
+    },
+    {
+      "id": "scala",
+      "name": "Scala",
+      "category": "Languages",
+      "family": "general",
+      "landmark": "tower",
+      "color": "#a7aec8",
+      "detection": {
+        "kind": "manual-or-source-evidence"
+      }
+    },
+    {
+      "id": "r",
+      "name": "R",
+      "category": "Languages",
+      "family": "general",
+      "landmark": "tower",
+      "color": "#a7aec8",
+      "detection": {
+        "kind": "manual-or-source-evidence"
+      }
+    },
+    {
+      "id": "julia",
+      "name": "Julia",
+      "category": "Languages",
+      "family": "general",
+      "landmark": "tower",
+      "color": "#a7aec8",
+      "detection": {
+        "kind": "manual-or-source-evidence"
+      }
+    },
+    {
+      "id": "dart",
+      "name": "Dart",
+      "category": "Languages",
+      "family": "general",
+      "landmark": "tower",
+      "color": "#a7aec8",
+      "detection": {
+        "kind": "manual-or-source-evidence"
+      }
+    },
+    {
+      "id": "matlab",
+      "name": "MATLAB",
+      "category": "Languages",
+      "family": "general",
+      "landmark": "tower",
+      "color": "#a7aec8",
+      "detection": {
+        "kind": "manual-or-source-evidence"
+      }
+    },
+    {
+      "id": "sql",
+      "name": "SQL",
+      "category": "Languages",
+      "family": "general",
+      "landmark": "tower",
+      "color": "#a7aec8",
+      "detection": {
+        "kind": "manual-or-source-evidence"
+      }
+    },
+    {
+      "id": "bash",
+      "name": "Bash",
+      "category": "Languages",
+      "family": "general",
+      "landmark": "tower",
+      "color": "#a7aec8",
+      "detection": {
+        "kind": "manual-or-source-evidence"
+      }
+    },
+    {
+      "id": "solidity",
+      "name": "Solidity",
+      "category": "Languages",
+      "family": "general",
+      "landmark": "tower",
+      "color": "#a7aec8",
+      "detection": {
+        "kind": "manual-or-source-evidence"
+      }
+    },
+    {
+      "id": "html",
+      "name": "HTML",
+      "category": "Languages",
+      "family": "general",
+      "landmark": "tower",
+      "color": "#a7aec8",
+      "detection": {
+        "kind": "manual-or-source-evidence"
+      }
+    },
+    {
+      "id": "css",
+      "name": "CSS",
+      "category": "Languages",
+      "family": "general",
+      "landmark": "tower",
+      "color": "#a7aec8",
+      "detection": {
+        "kind": "manual-or-source-evidence"
+      }
+    },
+    {
+      "id": "shell",
+      "name": "Shell",
+      "category": "Languages",
+      "family": "general",
+      "landmark": "tower",
+      "color": "#a7aec8",
+      "detection": {
+        "kind": "manual-or-source-evidence"
+      }
+    },
+    {
+      "id": "lua",
+      "name": "Lua",
+      "category": "Languages",
+      "family": "general",
+      "landmark": "tower",
+      "color": "#a7aec8",
+      "detection": {
+        "kind": "manual-or-source-evidence"
+      }
+    },
+    {
+      "id": "elixir",
+      "name": "Elixir",
+      "category": "Languages",
+      "family": "general",
+      "landmark": "tower",
+      "color": "#a7aec8",
+      "detection": {
+        "kind": "manual-or-source-evidence"
+      }
+    },
+    {
+      "id": "erlang",
+      "name": "Erlang",
+      "category": "Languages",
+      "family": "general",
+      "landmark": "tower",
+      "color": "#a7aec8",
+      "detection": {
+        "kind": "manual-or-source-evidence"
+      }
+    },
+    {
+      "id": "haskell",
+      "name": "Haskell",
+      "category": "Languages",
+      "family": "general",
+      "landmark": "tower",
+      "color": "#a7aec8",
+      "detection": {
+        "kind": "manual-or-source-evidence"
+      }
+    },
+    {
+      "id": "perl",
+      "name": "Perl",
+      "category": "Languages",
+      "family": "general",
+      "landmark": "tower",
+      "color": "#a7aec8",
+      "detection": {
+        "kind": "manual-or-source-evidence"
+      }
+    },
+    {
+      "id": "ocaml",
+      "name": "OCaml",
+      "category": "Languages",
+      "family": "general",
+      "landmark": "tower",
+      "color": "#a7aec8",
+      "detection": {
+        "kind": "manual-or-source-evidence"
+      }
+    },
+    {
+      "id": "zig",
+      "name": "Zig",
+      "category": "Languages",
+      "family": "general",
+      "landmark": "tower",
+      "color": "#a7aec8",
+      "detection": {
+        "kind": "manual-or-source-evidence"
+      }
+    },
+    {
+      "id": "angular",
+      "name": "Angular",
+      "category": "Frontend",
+      "family": "frontend",
+      "landmark": "prism",
+      "color": "#ed8e81",
+      "detection": {
+        "kind": "dependency-or-evidence",
+        "hint": "@angular/core"
+      }
+    },
+    {
+      "id": "react",
+      "name": "React",
+      "category": "Frontend",
+      "family": "frontend",
+      "landmark": "orbit",
+      "color": "#ed8e81",
+      "detection": {
+        "kind": "dependency-or-evidence",
+        "hint": "react"
+      }
+    },
+    {
+      "id": "next-js",
+      "name": "Next.js",
+      "category": "Frontend",
+      "family": "frontend",
+      "landmark": "prism",
+      "color": "#ed8e81",
+      "detection": {
+        "kind": "dependency-or-evidence",
+        "hint": "next"
+      }
+    },
+    {
+      "id": "vue",
+      "name": "Vue",
+      "category": "Frontend",
+      "family": "frontend",
+      "landmark": "v",
+      "color": "#ed8e81",
+      "detection": {
+        "kind": "dependency-or-evidence",
+        "hint": "vue"
+      }
+    },
+    {
+      "id": "nuxt",
+      "name": "Nuxt",
+      "category": "Frontend",
+      "family": "general",
+      "landmark": "tower",
+      "color": "#ed8e81",
+      "detection": {
+        "kind": "manual-or-source-evidence"
+      }
+    },
+    {
+      "id": "svelte",
+      "name": "Svelte",
+      "category": "Frontend",
+      "family": "general",
+      "landmark": "tower",
+      "color": "#ed8e81",
+      "detection": {
+        "kind": "manual-or-source-evidence"
+      }
+    },
+    {
+      "id": "sveltekit",
+      "name": "SvelteKit",
+      "category": "Frontend",
+      "family": "general",
+      "landmark": "tower",
+      "color": "#ed8e81",
+      "detection": {
+        "kind": "manual-or-source-evidence"
+      }
+    },
+    {
+      "id": "astro",
+      "name": "Astro",
+      "category": "Frontend",
+      "family": "general",
+      "landmark": "tower",
+      "color": "#ed8e81",
+      "detection": {
+        "kind": "manual-or-source-evidence"
+      }
+    },
+    {
+      "id": "remix",
+      "name": "Remix",
+      "category": "Frontend",
+      "family": "general",
+      "landmark": "tower",
+      "color": "#ed8e81",
+      "detection": {
+        "kind": "manual-or-source-evidence"
+      }
+    },
+    {
+      "id": "html5",
+      "name": "HTML5",
+      "category": "Frontend",
+      "family": "general",
+      "landmark": "tower",
+      "color": "#ed8e81",
+      "detection": {
+        "kind": "manual-or-source-evidence"
+      }
+    },
+    {
+      "id": "css3",
+      "name": "CSS3",
+      "category": "Frontend",
+      "family": "general",
+      "landmark": "tower",
+      "color": "#ed8e81",
+      "detection": {
+        "kind": "manual-or-source-evidence"
+      }
+    },
+    {
+      "id": "sass",
+      "name": "Sass",
+      "category": "Frontend",
+      "family": "general",
+      "landmark": "tower",
+      "color": "#ed8e81",
+      "detection": {
+        "kind": "manual-or-source-evidence"
+      }
+    },
+    {
+      "id": "tailwind-css",
+      "name": "Tailwind CSS",
+      "category": "Frontend",
+      "family": "general",
+      "landmark": "tower",
+      "color": "#ed8e81",
+      "detection": {
+        "kind": "manual-or-source-evidence"
+      }
+    },
+    {
+      "id": "bootstrap",
+      "name": "Bootstrap",
+      "category": "Frontend",
+      "family": "general",
+      "landmark": "tower",
+      "color": "#ed8e81",
+      "detection": {
+        "kind": "manual-or-source-evidence"
+      }
+    },
+    {
+      "id": "material-ui",
+      "name": "Material UI",
+      "category": "Frontend",
+      "family": "general",
+      "landmark": "tower",
+      "color": "#ed8e81",
+      "detection": {
+        "kind": "manual-or-source-evidence"
+      }
+    },
+    {
+      "id": "redux",
+      "name": "Redux",
+      "category": "Frontend",
+      "family": "general",
+      "landmark": "tower",
+      "color": "#ed8e81",
+      "detection": {
+        "kind": "manual-or-source-evidence"
+      }
+    },
+    {
+      "id": "zustand",
+      "name": "Zustand",
+      "category": "Frontend",
+      "family": "general",
+      "landmark": "tower",
+      "color": "#ed8e81",
+      "detection": {
+        "kind": "manual-or-source-evidence"
+      }
+    },
+    {
+      "id": "pinia",
+      "name": "Pinia",
+      "category": "Frontend",
+      "family": "general",
+      "landmark": "tower",
+      "color": "#ed8e81",
+      "detection": {
+        "kind": "manual-or-source-evidence"
+      }
+    },
+    {
+      "id": "alpine-js",
+      "name": "Alpine.js",
+      "category": "Frontend",
+      "family": "general",
+      "landmark": "tower",
+      "color": "#ed8e81",
+      "detection": {
+        "kind": "manual-or-source-evidence"
+      }
+    },
+    {
+      "id": "three-js",
+      "name": "Three.js",
+      "category": "3D & Visualization",
+      "family": "visual",
+      "landmark": "observatory",
+      "color": "#e1aa77",
+      "detection": {
+        "kind": "dependency-or-evidence",
+        "hint": "three"
+      }
+    },
+    {
+      "id": "react-three-fiber",
+      "name": "React Three Fiber",
+      "category": "3D & Visualization",
+      "family": "general",
+      "landmark": "tower",
+      "color": "#e1aa77",
+      "detection": {
+        "kind": "manual-or-source-evidence"
+      }
+    },
+    {
+      "id": "babylon-js",
+      "name": "Babylon.js",
+      "category": "3D & Visualization",
+      "family": "general",
+      "landmark": "tower",
+      "color": "#e1aa77",
+      "detection": {
+        "kind": "manual-or-source-evidence"
+      }
+    },
+    {
+      "id": "webgl",
+      "name": "WebGL",
+      "category": "3D & Visualization",
+      "family": "general",
+      "landmark": "tower",
+      "color": "#e1aa77",
+      "detection": {
+        "kind": "manual-or-source-evidence"
+      }
+    },
+    {
+      "id": "webgpu",
+      "name": "WebGPU",
+      "category": "3D & Visualization",
+      "family": "general",
+      "landmark": "tower",
+      "color": "#e1aa77",
+      "detection": {
+        "kind": "manual-or-source-evidence"
+      }
+    },
+    {
+      "id": "d3-js",
+      "name": "D3.js",
+      "category": "3D & Visualization",
+      "family": "general",
+      "landmark": "tower",
+      "color": "#e1aa77",
+      "detection": {
+        "kind": "manual-or-source-evidence"
+      }
+    },
+    {
+      "id": "chart-js",
+      "name": "Chart.js",
+      "category": "3D & Visualization",
+      "family": "general",
+      "landmark": "tower",
+      "color": "#e1aa77",
+      "detection": {
+        "kind": "manual-or-source-evidence"
+      }
+    },
+    {
+      "id": "plotly",
+      "name": "Plotly",
+      "category": "3D & Visualization",
+      "family": "general",
+      "landmark": "tower",
+      "color": "#e1aa77",
+      "detection": {
+        "kind": "manual-or-source-evidence"
+      }
+    },
+    {
+      "id": "echarts",
+      "name": "ECharts",
+      "category": "3D & Visualization",
+      "family": "general",
+      "landmark": "tower",
+      "color": "#e1aa77",
+      "detection": {
+        "kind": "manual-or-source-evidence"
+      }
+    },
+    {
+      "id": "cesiumjs",
+      "name": "CesiumJS",
+      "category": "3D & Visualization",
+      "family": "general",
+      "landmark": "tower",
+      "color": "#e1aa77",
+      "detection": {
+        "kind": "manual-or-source-evidence"
+      }
+    },
+    {
+      "id": "mapbox",
+      "name": "Mapbox",
+      "category": "3D & Visualization",
+      "family": "general",
+      "landmark": "tower",
+      "color": "#e1aa77",
+      "detection": {
+        "kind": "manual-or-source-evidence"
+      }
+    },
+    {
+      "id": "leaflet",
+      "name": "Leaflet",
+      "category": "3D & Visualization",
+      "family": "general",
+      "landmark": "tower",
+      "color": "#e1aa77",
+      "detection": {
+        "kind": "manual-or-source-evidence"
+      }
+    },
+    {
+      "id": "deck-gl",
+      "name": "Deck.gl",
+      "category": "3D & Visualization",
+      "family": "general",
+      "landmark": "tower",
+      "color": "#e1aa77",
+      "detection": {
+        "kind": "manual-or-source-evidence"
+      }
+    },
+    {
+      "id": "flask",
+      "name": "Flask",
+      "category": "Backend",
+      "family": "backend",
+      "landmark": "lab",
+      "color": "#90afd4",
+      "detection": {
+        "kind": "dependency-or-evidence",
+        "hint": "flask"
+      }
+    },
+    {
+      "id": "django",
+      "name": "Django",
+      "category": "Backend",
+      "family": "backend",
+      "landmark": "fortress",
+      "color": "#90afd4",
+      "detection": {
+        "kind": "dependency-or-evidence",
+        "hint": "django"
+      }
+    },
+    {
+      "id": "fastapi",
+      "name": "FastAPI",
+      "category": "Backend",
+      "family": "backend",
+      "landmark": "bolt",
+      "color": "#90afd4",
+      "detection": {
+        "kind": "dependency-or-evidence",
+        "hint": "fastapi"
+      }
+    },
+    {
+      "id": "express-js",
+      "name": "Express.js",
+      "category": "Backend",
+      "family": "backend",
+      "landmark": "hub",
+      "color": "#90afd4",
+      "detection": {
+        "kind": "dependency-or-evidence",
+        "hint": "express"
+      }
+    },
+    {
+      "id": "nestjs",
+      "name": "NestJS",
+      "category": "Backend",
+      "family": "backend",
+      "landmark": "hex",
+      "color": "#90afd4",
+      "detection": {
+        "kind": "dependency-or-evidence",
+        "hint": "@nestjs/core"
+      }
+    },
+    {
+      "id": "node-js",
+      "name": "Node.js",
+      "category": "Backend",
+      "family": "general",
+      "landmark": "tower",
+      "color": "#90afd4",
+      "detection": {
+        "kind": "manual-or-source-evidence"
+      }
+    },
+    {
+      "id": "spring-boot",
+      "name": "Spring Boot",
+      "category": "Backend",
+      "family": "general",
+      "landmark": "tower",
+      "color": "#90afd4",
+      "detection": {
+        "kind": "manual-or-source-evidence"
+      }
+    },
+    {
+      "id": "asp-net-core",
+      "name": "ASP.NET Core",
+      "category": "Backend",
+      "family": "general",
+      "landmark": "tower",
+      "color": "#90afd4",
+      "detection": {
+        "kind": "manual-or-source-evidence"
+      }
+    },
+    {
+      "id": "laravel",
+      "name": "Laravel",
+      "category": "Backend",
+      "family": "general",
+      "landmark": "tower",
+      "color": "#90afd4",
+      "detection": {
+        "kind": "manual-or-source-evidence"
+      }
+    },
+    {
+      "id": "ruby-on-rails",
+      "name": "Ruby on Rails",
+      "category": "Backend",
+      "family": "general",
+      "landmark": "tower",
+      "color": "#90afd4",
+      "detection": {
+        "kind": "manual-or-source-evidence"
+      }
+    },
+    {
+      "id": "gin",
+      "name": "Gin",
+      "category": "Backend",
+      "family": "general",
+      "landmark": "tower",
+      "color": "#90afd4",
+      "detection": {
+        "kind": "manual-or-source-evidence"
+      }
+    },
+    {
+      "id": "actix-web",
+      "name": "Actix Web",
+      "category": "Backend",
+      "family": "general",
+      "landmark": "tower",
+      "color": "#90afd4",
+      "detection": {
+        "kind": "manual-or-source-evidence"
+      }
+    },
+    {
+      "id": "axum",
+      "name": "Axum",
+      "category": "Backend",
+      "family": "general",
+      "landmark": "tower",
+      "color": "#90afd4",
+      "detection": {
+        "kind": "manual-or-source-evidence"
+      }
+    },
+    {
+      "id": "hono",
+      "name": "Hono",
+      "category": "Backend",
+      "family": "general",
+      "landmark": "tower",
+      "color": "#90afd4",
+      "detection": {
+        "kind": "manual-or-source-evidence"
+      }
+    },
+    {
+      "id": "fastify",
+      "name": "Fastify",
+      "category": "Backend",
+      "family": "general",
+      "landmark": "tower",
+      "color": "#90afd4",
+      "detection": {
+        "kind": "manual-or-source-evidence"
+      }
+    },
+    {
+      "id": "graphql",
+      "name": "GraphQL",
+      "category": "Backend",
+      "family": "backend",
+      "landmark": "graph",
+      "color": "#90afd4",
+      "detection": {
+        "kind": "dependency-or-evidence",
+        "hint": "graphql"
+      }
+    },
+    {
+      "id": "rest-api",
+      "name": "REST API",
+      "category": "Backend",
+      "family": "general",
+      "landmark": "tower",
+      "color": "#90afd4",
+      "detection": {
+        "kind": "manual-or-source-evidence"
+      }
+    },
+    {
+      "id": "grpc",
+      "name": "gRPC",
+      "category": "Backend",
+      "family": "general",
+      "landmark": "tower",
+      "color": "#90afd4",
+      "detection": {
+        "kind": "manual-or-source-evidence"
+      }
+    },
+    {
+      "id": "websocket",
+      "name": "WebSocket",
+      "category": "Backend",
+      "family": "backend",
+      "landmark": "relay",
+      "color": "#90afd4",
+      "detection": {
+        "kind": "dependency-or-evidence",
+        "hint": "ws"
+      }
+    },
+    {
+      "id": "postgresql",
+      "name": "PostgreSQL",
+      "category": "Databases",
+      "family": "database",
+      "landmark": "archive",
+      "color": "#d9a27a",
+      "detection": {
+        "kind": "dependency-or-evidence",
+        "hint": "pg"
+      }
+    },
+    {
+      "id": "mysql",
+      "name": "MySQL",
+      "category": "Databases",
+      "family": "general",
+      "landmark": "tower",
+      "color": "#d9a27a",
+      "detection": {
+        "kind": "manual-or-source-evidence"
+      }
+    },
+    {
+      "id": "mariadb",
+      "name": "MariaDB",
+      "category": "Databases",
+      "family": "general",
+      "landmark": "tower",
+      "color": "#d9a27a",
+      "detection": {
+        "kind": "manual-or-source-evidence"
+      }
+    },
+    {
+      "id": "sqlite",
+      "name": "SQLite",
+      "category": "Databases",
+      "family": "general",
+      "landmark": "tower",
+      "color": "#d9a27a",
+      "detection": {
+        "kind": "manual-or-source-evidence"
+      }
+    },
+    {
+      "id": "mongodb",
+      "name": "MongoDB",
+      "category": "Databases",
+      "family": "database",
+      "landmark": "archive",
+      "color": "#d9a27a",
+      "detection": {
+        "kind": "dependency-or-evidence",
+        "hint": "mongodb"
+      }
+    },
+    {
+      "id": "redis",
+      "name": "Redis",
+      "category": "Databases",
+      "family": "database",
+      "landmark": "stack",
+      "color": "#d9a27a",
+      "detection": {
+        "kind": "dependency-or-evidence",
+        "hint": "redis"
+      }
+    },
+    {
+      "id": "elasticsearch",
+      "name": "Elasticsearch",
+      "category": "Databases",
+      "family": "general",
+      "landmark": "tower",
+      "color": "#d9a27a",
+      "detection": {
+        "kind": "manual-or-source-evidence"
+      }
+    },
+    {
+      "id": "opensearch",
+      "name": "OpenSearch",
+      "category": "Databases",
+      "family": "general",
+      "landmark": "tower",
+      "color": "#d9a27a",
+      "detection": {
+        "kind": "manual-or-source-evidence"
+      }
+    },
+    {
+      "id": "neo4j",
+      "name": "Neo4j",
+      "category": "Databases",
+      "family": "general",
+      "landmark": "tower",
+      "color": "#d9a27a",
+      "detection": {
+        "kind": "manual-or-source-evidence"
+      }
+    },
+    {
+      "id": "cassandra",
+      "name": "Cassandra",
+      "category": "Databases",
+      "family": "general",
+      "landmark": "tower",
+      "color": "#d9a27a",
+      "detection": {
+        "kind": "manual-or-source-evidence"
+      }
+    },
+    {
+      "id": "dynamodb",
+      "name": "DynamoDB",
+      "category": "Databases",
+      "family": "general",
+      "landmark": "tower",
+      "color": "#d9a27a",
+      "detection": {
+        "kind": "manual-or-source-evidence"
+      }
+    },
+    {
+      "id": "firebase",
+      "name": "Firebase",
+      "category": "Databases",
+      "family": "general",
+      "landmark": "tower",
+      "color": "#d9a27a",
+      "detection": {
+        "kind": "manual-or-source-evidence"
+      }
+    },
+    {
+      "id": "supabase",
+      "name": "Supabase",
+      "category": "Databases",
+      "family": "general",
+      "landmark": "tower",
+      "color": "#d9a27a",
+      "detection": {
+        "kind": "manual-or-source-evidence"
+      }
+    },
+    {
+      "id": "clickhouse",
+      "name": "ClickHouse",
+      "category": "Databases",
+      "family": "general",
+      "landmark": "tower",
+      "color": "#d9a27a",
+      "detection": {
+        "kind": "manual-or-source-evidence"
+      }
+    },
+    {
+      "id": "influxdb",
+      "name": "InfluxDB",
+      "category": "Databases",
+      "family": "general",
+      "landmark": "tower",
+      "color": "#d9a27a",
+      "detection": {
+        "kind": "manual-or-source-evidence"
+      }
+    },
+    {
+      "id": "qdrant",
+      "name": "Qdrant",
+      "category": "Databases",
+      "family": "general",
+      "landmark": "tower",
+      "color": "#d9a27a",
+      "detection": {
+        "kind": "manual-or-source-evidence"
+      }
+    },
+    {
+      "id": "pinecone",
+      "name": "Pinecone",
+      "category": "Databases",
+      "family": "general",
+      "landmark": "tower",
+      "color": "#d9a27a",
+      "detection": {
+        "kind": "manual-or-source-evidence"
+      }
+    },
+    {
+      "id": "weaviate",
+      "name": "Weaviate",
+      "category": "Databases",
+      "family": "general",
+      "landmark": "tower",
+      "color": "#d9a27a",
+      "detection": {
+        "kind": "manual-or-source-evidence"
+      }
+    },
+    {
+      "id": "chroma",
+      "name": "Chroma",
+      "category": "Databases",
+      "family": "general",
+      "landmark": "tower",
+      "color": "#d9a27a",
+      "detection": {
+        "kind": "manual-or-source-evidence"
+      }
+    },
+    {
+      "id": "milvus",
+      "name": "Milvus",
+      "category": "Databases",
+      "family": "general",
+      "landmark": "tower",
+      "color": "#d9a27a",
+      "detection": {
+        "kind": "manual-or-source-evidence"
+      }
+    },
+    {
+      "id": "scikit-learn",
+      "name": "Scikit-learn",
+      "category": "AI & Machine Learning",
+      "family": "ai",
+      "landmark": "lab",
+      "color": "#bd9ae8",
+      "detection": {
+        "kind": "dependency-or-evidence",
+        "hint": "scikit-learn"
+      }
+    },
+    {
+      "id": "pytorch",
+      "name": "PyTorch",
+      "category": "AI & Machine Learning",
+      "family": "ai",
+      "landmark": "neural",
+      "color": "#bd9ae8",
+      "detection": {
+        "kind": "dependency-or-evidence",
+        "hint": "torch"
+      }
+    },
+    {
+      "id": "tensorflow",
+      "name": "TensorFlow",
+      "category": "AI & Machine Learning",
+      "family": "ai",
+      "landmark": "neural",
+      "color": "#bd9ae8",
+      "detection": {
+        "kind": "dependency-or-evidence",
+        "hint": "tensorflow"
+      }
+    },
+    {
+      "id": "keras",
+      "name": "Keras",
+      "category": "AI & Machine Learning",
+      "family": "ai",
+      "landmark": "layers",
+      "color": "#bd9ae8",
+      "detection": {
+        "kind": "dependency-or-evidence",
+        "hint": "keras"
+      }
+    },
+    {
+      "id": "xgboost",
+      "name": "XGBoost",
+      "category": "AI & Machine Learning",
+      "family": "general",
+      "landmark": "tower",
+      "color": "#bd9ae8",
+      "detection": {
+        "kind": "manual-or-source-evidence"
+      }
+    },
+    {
+      "id": "lightgbm",
+      "name": "LightGBM",
+      "category": "AI & Machine Learning",
+      "family": "general",
+      "landmark": "tower",
+      "color": "#bd9ae8",
+      "detection": {
+        "kind": "manual-or-source-evidence"
+      }
+    },
+    {
+      "id": "catboost",
+      "name": "CatBoost",
+      "category": "AI & Machine Learning",
+      "family": "general",
+      "landmark": "tower",
+      "color": "#bd9ae8",
+      "detection": {
+        "kind": "manual-or-source-evidence"
+      }
+    },
+    {
+      "id": "jax",
+      "name": "JAX",
+      "category": "AI & Machine Learning",
+      "family": "ai",
+      "landmark": "neural",
+      "color": "#bd9ae8",
+      "detection": {
+        "kind": "dependency-or-evidence",
+        "hint": "jax"
+      }
+    },
+    {
+      "id": "hugging-face",
+      "name": "Hugging Face",
+      "category": "AI & Machine Learning",
+      "family": "ai",
+      "landmark": "observatory",
+      "color": "#bd9ae8",
+      "detection": {
+        "kind": "dependency-or-evidence",
+        "hint": "transformers"
+      }
+    },
+    {
+      "id": "mlflow",
+      "name": "MLflow",
+      "category": "AI & Machine Learning",
+      "family": "general",
+      "landmark": "tower",
+      "color": "#bd9ae8",
+      "detection": {
+        "kind": "manual-or-source-evidence"
+      }
+    },
+    {
+      "id": "optuna",
+      "name": "Optuna",
+      "category": "AI & Machine Learning",
+      "family": "general",
+      "landmark": "tower",
+      "color": "#bd9ae8",
+      "detection": {
+        "kind": "manual-or-source-evidence"
+      }
+    },
+    {
+      "id": "numpy",
+      "name": "NumPy",
+      "category": "AI & Machine Learning",
+      "family": "general",
+      "landmark": "tower",
+      "color": "#bd9ae8",
+      "detection": {
+        "kind": "manual-or-source-evidence"
+      }
+    },
+    {
+      "id": "openai-api",
+      "name": "OpenAI API",
+      "category": "AI & Machine Learning",
+      "family": "general",
+      "landmark": "tower",
+      "color": "#bd9ae8",
+      "detection": {
+        "kind": "manual-or-source-evidence"
+      }
+    },
+    {
+      "id": "anthropic-api",
+      "name": "Anthropic API",
+      "category": "AI & Machine Learning",
+      "family": "general",
+      "landmark": "tower",
+      "color": "#bd9ae8",
+      "detection": {
+        "kind": "manual-or-source-evidence"
+      }
+    },
+    {
+      "id": "cnn",
+      "name": "CNN",
+      "category": "Deep Learning",
+      "family": "ai",
+      "landmark": "layers",
+      "color": "#bd9ae8",
+      "detection": {
+        "kind": "manual-or-source-evidence"
+      }
+    },
+    {
+      "id": "rnn",
+      "name": "RNN",
+      "category": "Deep Learning",
+      "family": "general",
+      "landmark": "tower",
+      "color": "#bd9ae8",
+      "detection": {
+        "kind": "manual-or-source-evidence"
+      }
+    },
+    {
+      "id": "lstm",
+      "name": "LSTM",
+      "category": "Deep Learning",
+      "family": "general",
+      "landmark": "tower",
+      "color": "#bd9ae8",
+      "detection": {
+        "kind": "manual-or-source-evidence"
+      }
+    },
+    {
+      "id": "gru",
+      "name": "GRU",
+      "category": "Deep Learning",
+      "family": "general",
+      "landmark": "tower",
+      "color": "#bd9ae8",
+      "detection": {
+        "kind": "manual-or-source-evidence"
+      }
+    },
+    {
+      "id": "gan",
+      "name": "GAN",
+      "category": "Deep Learning",
+      "family": "general",
+      "landmark": "tower",
+      "color": "#bd9ae8",
+      "detection": {
+        "kind": "manual-or-source-evidence"
+      }
+    },
+    {
+      "id": "vae",
+      "name": "VAE",
+      "category": "Deep Learning",
+      "family": "general",
+      "landmark": "tower",
+      "color": "#bd9ae8",
+      "detection": {
+        "kind": "manual-or-source-evidence"
+      }
+    },
+    {
+      "id": "transformer",
+      "name": "Transformer",
+      "category": "Deep Learning",
+      "family": "ai",
+      "landmark": "bridge",
+      "color": "#bd9ae8",
+      "detection": {
+        "kind": "dependency-or-evidence",
+        "hint": "transformers"
+      }
+    },
+    {
+      "id": "vision-transformer",
+      "name": "Vision Transformer",
+      "category": "Deep Learning",
+      "family": "general",
+      "landmark": "tower",
+      "color": "#bd9ae8",
+      "detection": {
+        "kind": "manual-or-source-evidence"
+      }
+    },
+    {
+      "id": "diffusion-models",
+      "name": "Diffusion Models",
+      "category": "Deep Learning",
+      "family": "general",
+      "landmark": "tower",
+      "color": "#bd9ae8",
+      "detection": {
+        "kind": "manual-or-source-evidence"
+      }
+    },
+    {
+      "id": "gnn",
+      "name": "GNN",
+      "category": "Deep Learning",
+      "family": "ai",
+      "landmark": "network",
+      "color": "#bd9ae8",
+      "detection": {
+        "kind": "manual-or-source-evidence"
+      }
+    },
+    {
+      "id": "stable-diffusion",
+      "name": "Stable Diffusion",
+      "category": "Deep Learning",
+      "family": "general",
+      "landmark": "tower",
+      "color": "#bd9ae8",
+      "detection": {
+        "kind": "manual-or-source-evidence"
+      }
+    },
+    {
+      "id": "autoencoder",
+      "name": "Autoencoder",
+      "category": "Deep Learning",
+      "family": "general",
+      "landmark": "tower",
+      "color": "#bd9ae8",
+      "detection": {
+        "kind": "manual-or-source-evidence"
+      }
+    },
+    {
+      "id": "gpt",
+      "name": "GPT",
+      "category": "LLM & Generative AI",
+      "family": "general",
+      "landmark": "tower",
+      "color": "#bd9ae8",
+      "detection": {
+        "kind": "manual-or-source-evidence"
+      }
+    },
+    {
+      "id": "llama",
+      "name": "Llama",
+      "category": "LLM & Generative AI",
+      "family": "ai",
+      "landmark": "library",
+      "color": "#bd9ae8",
+      "detection": {
+        "kind": "manual-or-source-evidence"
+      }
+    },
+    {
+      "id": "mistral",
+      "name": "Mistral",
+      "category": "LLM & Generative AI",
+      "family": "ai",
+      "landmark": "library",
+      "color": "#bd9ae8",
+      "detection": {
+        "kind": "manual-or-source-evidence"
+      }
+    },
+    {
+      "id": "qwen",
+      "name": "Qwen",
+      "category": "LLM & Generative AI",
+      "family": "ai",
+      "landmark": "library",
+      "color": "#bd9ae8",
+      "detection": {
+        "kind": "manual-or-source-evidence"
+      }
+    },
+    {
+      "id": "gemma",
+      "name": "Gemma",
+      "category": "LLM & Generative AI",
+      "family": "general",
+      "landmark": "tower",
+      "color": "#bd9ae8",
+      "detection": {
+        "kind": "manual-or-source-evidence"
+      }
+    },
+    {
+      "id": "claude",
+      "name": "Claude",
+      "category": "LLM & Generative AI",
+      "family": "general",
+      "landmark": "tower",
+      "color": "#bd9ae8",
+      "detection": {
+        "kind": "manual-or-source-evidence"
+      }
+    },
+    {
+      "id": "bert",
+      "name": "BERT",
+      "category": "LLM & Generative AI",
+      "family": "ai",
+      "landmark": "bridge",
+      "color": "#bd9ae8",
+      "detection": {
+        "kind": "manual-or-source-evidence"
+      }
+    },
+    {
+      "id": "t5",
+      "name": "T5",
+      "category": "LLM & Generative AI",
+      "family": "ai",
+      "landmark": "library",
+      "color": "#bd9ae8",
+      "detection": {
+        "kind": "manual-or-source-evidence"
+      }
+    },
+    {
+      "id": "langchain",
+      "name": "LangChain",
+      "category": "LLM & Generative AI",
+      "family": "ai",
+      "landmark": "chain",
+      "color": "#bd9ae8",
+      "detection": {
+        "kind": "dependency-or-evidence",
+        "hint": "langchain"
+      }
+    },
+    {
+      "id": "langgraph",
+      "name": "LangGraph",
+      "category": "LLM & Generative AI",
+      "family": "ai",
+      "landmark": "network",
+      "color": "#bd9ae8",
+      "detection": {
+        "kind": "dependency-or-evidence",
+        "hint": "langgraph"
+      }
+    },
+    {
+      "id": "llamaindex",
+      "name": "LlamaIndex",
+      "category": "LLM & Generative AI",
+      "family": "general",
+      "landmark": "tower",
+      "color": "#bd9ae8",
+      "detection": {
+        "kind": "manual-or-source-evidence"
+      }
+    },
+    {
+      "id": "ollama",
+      "name": "Ollama",
+      "category": "LLM & Generative AI",
+      "family": "general",
+      "landmark": "tower",
+      "color": "#bd9ae8",
+      "detection": {
+        "kind": "manual-or-source-evidence"
+      }
+    },
+    {
+      "id": "vllm",
+      "name": "vLLM",
+      "category": "LLM & Generative AI",
+      "family": "general",
+      "landmark": "tower",
+      "color": "#bd9ae8",
+      "detection": {
+        "kind": "manual-or-source-evidence"
+      }
+    },
+    {
+      "id": "llama-cpp",
+      "name": "llama.cpp",
+      "category": "LLM & Generative AI",
+      "family": "general",
+      "landmark": "tower",
+      "color": "#bd9ae8",
+      "detection": {
+        "kind": "manual-or-source-evidence"
+      }
+    },
+    {
+      "id": "haystack",
+      "name": "Haystack",
+      "category": "LLM & Generative AI",
+      "family": "general",
+      "landmark": "tower",
+      "color": "#bd9ae8",
+      "detection": {
+        "kind": "manual-or-source-evidence"
+      }
+    },
+    {
+      "id": "semantic-kernel",
+      "name": "Semantic Kernel",
+      "category": "LLM & Generative AI",
+      "family": "general",
+      "landmark": "tower",
+      "color": "#bd9ae8",
+      "detection": {
+        "kind": "manual-or-source-evidence"
+      }
+    },
+    {
+      "id": "rag",
+      "name": "RAG",
+      "category": "AI Techniques",
+      "family": "ai",
+      "landmark": "bridge",
+      "color": "#bd9ae8",
+      "detection": {
+        "kind": "manual-or-source-evidence"
+      }
+    },
+    {
+      "id": "fine-tuning",
+      "name": "Fine-tuning",
+      "category": "AI Techniques",
+      "family": "general",
+      "landmark": "tower",
+      "color": "#bd9ae8",
+      "detection": {
+        "kind": "manual-or-source-evidence"
+      }
+    },
+    {
+      "id": "lora",
+      "name": "LoRA",
+      "category": "AI Techniques",
+      "family": "general",
+      "landmark": "tower",
+      "color": "#bd9ae8",
+      "detection": {
+        "kind": "manual-or-source-evidence"
+      }
+    },
+    {
+      "id": "qlora",
+      "name": "QLoRA",
+      "category": "AI Techniques",
+      "family": "general",
+      "landmark": "tower",
+      "color": "#bd9ae8",
+      "detection": {
+        "kind": "manual-or-source-evidence"
+      }
+    },
+    {
+      "id": "prompt-engineering",
+      "name": "Prompt Engineering",
+      "category": "AI Techniques",
+      "family": "general",
+      "landmark": "tower",
+      "color": "#bd9ae8",
+      "detection": {
+        "kind": "manual-or-source-evidence"
+      }
+    },
+    {
+      "id": "embeddings",
+      "name": "Embeddings",
+      "category": "AI Techniques",
+      "family": "general",
+      "landmark": "tower",
+      "color": "#bd9ae8",
+      "detection": {
+        "kind": "manual-or-source-evidence"
+      }
+    },
+    {
+      "id": "vector-search",
+      "name": "Vector Search",
+      "category": "AI Techniques",
+      "family": "general",
+      "landmark": "tower",
+      "color": "#bd9ae8",
+      "detection": {
+        "kind": "manual-or-source-evidence"
+      }
+    },
+    {
+      "id": "ai-agents",
+      "name": "AI Agents",
+      "category": "AI Techniques",
+      "family": "general",
+      "landmark": "tower",
+      "color": "#bd9ae8",
+      "detection": {
+        "kind": "manual-or-source-evidence"
+      }
+    },
+    {
+      "id": "tool-calling",
+      "name": "Tool Calling",
+      "category": "AI Techniques",
+      "family": "general",
+      "landmark": "tower",
+      "color": "#bd9ae8",
+      "detection": {
+        "kind": "manual-or-source-evidence"
+      }
+    },
+    {
+      "id": "quantization",
+      "name": "Quantization",
+      "category": "AI Techniques",
+      "family": "general",
+      "landmark": "tower",
+      "color": "#bd9ae8",
+      "detection": {
+        "kind": "manual-or-source-evidence"
+      }
+    },
+    {
+      "id": "attention",
+      "name": "Attention",
+      "category": "AI Techniques",
+      "family": "general",
+      "landmark": "tower",
+      "color": "#bd9ae8",
+      "detection": {
+        "kind": "manual-or-source-evidence"
+      }
+    },
+    {
+      "id": "reinforcement-learning",
+      "name": "Reinforcement Learning",
+      "category": "AI Techniques",
+      "family": "general",
+      "landmark": "tower",
+      "color": "#bd9ae8",
+      "detection": {
+        "kind": "manual-or-source-evidence"
+      }
+    },
+    {
+      "id": "opencv",
+      "name": "OpenCV",
+      "category": "Computer Vision",
+      "family": "vision",
+      "landmark": "lens",
+      "color": "#bb9bdf",
+      "detection": {
+        "kind": "dependency-or-evidence",
+        "hint": "opencv-python"
+      }
+    },
+    {
+      "id": "yolo",
+      "name": "YOLO",
+      "category": "Computer Vision",
+      "family": "vision",
+      "landmark": "scanner",
+      "color": "#bb9bdf",
+      "detection": {
+        "kind": "dependency-or-evidence",
+        "hint": "ultralytics"
+      }
+    },
+    {
+      "id": "detectron2",
+      "name": "Detectron2",
+      "category": "Computer Vision",
+      "family": "general",
+      "landmark": "tower",
+      "color": "#bb9bdf",
+      "detection": {
+        "kind": "manual-or-source-evidence"
+      }
+    },
+    {
+      "id": "sam",
+      "name": "SAM",
+      "category": "Computer Vision",
+      "family": "general",
+      "landmark": "tower",
+      "color": "#bb9bdf",
+      "detection": {
+        "kind": "manual-or-source-evidence"
+      }
+    },
+    {
+      "id": "easyocr",
+      "name": "EasyOCR",
+      "category": "Computer Vision",
+      "family": "general",
+      "landmark": "tower",
+      "color": "#bb9bdf",
+      "detection": {
+        "kind": "manual-or-source-evidence"
+      }
+    },
+    {
+      "id": "tesseract",
+      "name": "Tesseract",
+      "category": "Computer Vision",
+      "family": "general",
+      "landmark": "tower",
+      "color": "#bb9bdf",
+      "detection": {
+        "kind": "manual-or-source-evidence"
+      }
+    },
+    {
+      "id": "mediapipe",
+      "name": "MediaPipe",
+      "category": "Computer Vision",
+      "family": "general",
+      "landmark": "tower",
+      "color": "#bb9bdf",
+      "detection": {
+        "kind": "manual-or-source-evidence"
+      }
+    },
+    {
+      "id": "torchvision",
+      "name": "torchvision",
+      "category": "Computer Vision",
+      "family": "general",
+      "landmark": "tower",
+      "color": "#bb9bdf",
+      "detection": {
+        "kind": "manual-or-source-evidence"
+      }
+    },
+    {
+      "id": "pillow",
+      "name": "Pillow",
+      "category": "Computer Vision",
+      "family": "general",
+      "landmark": "tower",
+      "color": "#bb9bdf",
+      "detection": {
+        "kind": "manual-or-source-evidence"
+      }
+    },
+    {
+      "id": "ultralytics",
+      "name": "Ultralytics",
+      "category": "Computer Vision",
+      "family": "general",
+      "landmark": "tower",
+      "color": "#bb9bdf",
+      "detection": {
+        "kind": "manual-or-source-evidence"
+      }
+    },
+    {
+      "id": "spacy",
+      "name": "spaCy",
+      "category": "NLP",
+      "family": "general",
+      "landmark": "tower",
+      "color": "#bd9ae8",
+      "detection": {
+        "kind": "manual-or-source-evidence"
+      }
+    },
+    {
+      "id": "nltk",
+      "name": "NLTK",
+      "category": "NLP",
+      "family": "general",
+      "landmark": "tower",
+      "color": "#bd9ae8",
+      "detection": {
+        "kind": "manual-or-source-evidence"
+      }
+    },
+    {
+      "id": "sentence-transformers",
+      "name": "Sentence Transformers",
+      "category": "NLP",
+      "family": "general",
+      "landmark": "tower",
+      "color": "#bd9ae8",
+      "detection": {
+        "kind": "manual-or-source-evidence"
+      }
+    },
+    {
+      "id": "tokenization",
+      "name": "Tokenization",
+      "category": "NLP",
+      "family": "general",
+      "landmark": "tower",
+      "color": "#bd9ae8",
+      "detection": {
+        "kind": "manual-or-source-evidence"
+      }
+    },
+    {
+      "id": "ner",
+      "name": "NER",
+      "category": "NLP",
+      "family": "general",
+      "landmark": "tower",
+      "color": "#bd9ae8",
+      "detection": {
+        "kind": "manual-or-source-evidence"
+      }
+    },
+    {
+      "id": "semantic-search",
+      "name": "Semantic Search",
+      "category": "NLP",
+      "family": "general",
+      "landmark": "tower",
+      "color": "#bd9ae8",
+      "detection": {
+        "kind": "manual-or-source-evidence"
+      }
+    },
+    {
+      "id": "text-classification",
+      "name": "Text Classification",
+      "category": "NLP",
+      "family": "general",
+      "landmark": "tower",
+      "color": "#bd9ae8",
+      "detection": {
+        "kind": "manual-or-source-evidence"
+      }
+    },
+    {
+      "id": "whisper",
+      "name": "Whisper",
+      "category": "NLP",
+      "family": "general",
+      "landmark": "tower",
+      "color": "#bd9ae8",
+      "detection": {
+        "kind": "manual-or-source-evidence"
+      }
+    },
+    {
+      "id": "dvc",
+      "name": "DVC",
+      "category": "MLOps",
+      "family": "general",
+      "landmark": "tower",
+      "color": "#98cdbb",
+      "detection": {
+        "kind": "manual-or-source-evidence"
+      }
+    },
+    {
+      "id": "kubeflow",
+      "name": "Kubeflow",
+      "category": "MLOps",
+      "family": "general",
+      "landmark": "tower",
+      "color": "#98cdbb",
+      "detection": {
+        "kind": "manual-or-source-evidence"
+      }
+    },
+    {
+      "id": "weights---biases",
+      "name": "Weights & Biases",
+      "category": "MLOps",
+      "family": "general",
+      "landmark": "tower",
+      "color": "#98cdbb",
+      "detection": {
+        "kind": "manual-or-source-evidence"
+      }
+    },
+    {
+      "id": "bentoml",
+      "name": "BentoML",
+      "category": "MLOps",
+      "family": "general",
+      "landmark": "tower",
+      "color": "#98cdbb",
+      "detection": {
+        "kind": "manual-or-source-evidence"
+      }
+    },
+    {
+      "id": "onnx",
+      "name": "ONNX",
+      "category": "MLOps",
+      "family": "general",
+      "landmark": "tower",
+      "color": "#98cdbb",
+      "detection": {
+        "kind": "manual-or-source-evidence"
+      }
+    },
+    {
+      "id": "triton-inference-server",
+      "name": "Triton Inference Server",
+      "category": "MLOps",
+      "family": "general",
+      "landmark": "tower",
+      "color": "#98cdbb",
+      "detection": {
+        "kind": "manual-or-source-evidence"
+      }
+    },
+    {
+      "id": "model-monitoring",
+      "name": "Model Monitoring",
+      "category": "MLOps",
+      "family": "general",
+      "landmark": "tower",
+      "color": "#98cdbb",
+      "detection": {
+        "kind": "manual-or-source-evidence"
+      }
+    },
+    {
+      "id": "ray-serve",
+      "name": "Ray Serve",
+      "category": "MLOps",
+      "family": "general",
+      "landmark": "tower",
+      "color": "#98cdbb",
+      "detection": {
+        "kind": "manual-or-source-evidence"
+      }
+    },
+    {
+      "id": "docker",
+      "name": "Docker",
+      "category": "DevOps",
+      "family": "cloud",
+      "landmark": "container",
+      "color": "#86c5b5",
+      "detection": {
+        "kind": "dependency-or-evidence",
+        "hint": "Dockerfile"
+      }
+    },
+    {
+      "id": "docker-compose",
+      "name": "Docker Compose",
+      "category": "DevOps",
+      "family": "cloud",
+      "landmark": "container",
+      "color": "#86c5b5",
+      "detection": {
+        "kind": "dependency-or-evidence",
+        "hint": "compose.yaml"
+      }
+    },
+    {
+      "id": "kubernetes",
+      "name": "Kubernetes",
+      "category": "DevOps",
+      "family": "cloud",
+      "landmark": "command",
+      "color": "#86c5b5",
+      "detection": {
+        "kind": "dependency-or-evidence",
+        "hint": "kubernetes"
+      }
+    },
+    {
+      "id": "helm",
+      "name": "Helm",
+      "category": "DevOps",
+      "family": "general",
+      "landmark": "tower",
+      "color": "#86c5b5",
+      "detection": {
+        "kind": "manual-or-source-evidence"
+      }
+    },
+    {
+      "id": "terraform",
+      "name": "Terraform",
+      "category": "DevOps",
+      "family": "general",
+      "landmark": "tower",
+      "color": "#86c5b5",
+      "detection": {
+        "kind": "manual-or-source-evidence"
+      }
+    },
+    {
+      "id": "ansible",
+      "name": "Ansible",
+      "category": "DevOps",
+      "family": "general",
+      "landmark": "tower",
+      "color": "#86c5b5",
+      "detection": {
+        "kind": "manual-or-source-evidence"
+      }
+    },
+    {
+      "id": "github-actions",
+      "name": "GitHub Actions",
+      "category": "DevOps",
+      "family": "cloud",
+      "landmark": "workshop",
+      "color": "#86c5b5",
+      "detection": {
+        "kind": "dependency-or-evidence",
+        "hint": ".github/workflows"
+      }
+    },
+    {
+      "id": "gitlab-ci",
+      "name": "GitLab CI",
+      "category": "DevOps",
+      "family": "general",
+      "landmark": "tower",
+      "color": "#86c5b5",
+      "detection": {
+        "kind": "manual-or-source-evidence"
+      }
+    },
+    {
+      "id": "jenkins",
+      "name": "Jenkins",
+      "category": "DevOps",
+      "family": "general",
+      "landmark": "tower",
+      "color": "#86c5b5",
+      "detection": {
+        "kind": "manual-or-source-evidence"
+      }
+    },
+    {
+      "id": "argo-cd",
+      "name": "Argo CD",
+      "category": "DevOps",
+      "family": "general",
+      "landmark": "tower",
+      "color": "#86c5b5",
+      "detection": {
+        "kind": "manual-or-source-evidence"
+      }
+    },
+    {
+      "id": "prometheus",
+      "name": "Prometheus",
+      "category": "DevOps",
+      "family": "general",
+      "landmark": "tower",
+      "color": "#86c5b5",
+      "detection": {
+        "kind": "manual-or-source-evidence"
+      }
+    },
+    {
+      "id": "grafana",
+      "name": "Grafana",
+      "category": "DevOps",
+      "family": "general",
+      "landmark": "tower",
+      "color": "#86c5b5",
+      "detection": {
+        "kind": "manual-or-source-evidence"
+      }
+    },
+    {
+      "id": "nginx",
+      "name": "Nginx",
+      "category": "DevOps",
+      "family": "general",
+      "landmark": "tower",
+      "color": "#86c5b5",
+      "detection": {
+        "kind": "manual-or-source-evidence"
+      }
+    },
+    {
+      "id": "aws",
+      "name": "AWS",
+      "category": "Cloud",
+      "family": "cloud",
+      "landmark": "cloud",
+      "color": "#86c5b5",
+      "detection": {
+        "kind": "manual-or-source-evidence"
+      }
+    },
+    {
+      "id": "azure",
+      "name": "Azure",
+      "category": "Cloud",
+      "family": "general",
+      "landmark": "tower",
+      "color": "#86c5b5",
+      "detection": {
+        "kind": "manual-or-source-evidence"
+      }
+    },
+    {
+      "id": "google-cloud",
+      "name": "Google Cloud",
+      "category": "Cloud",
+      "family": "general",
+      "landmark": "tower",
+      "color": "#86c5b5",
+      "detection": {
+        "kind": "manual-or-source-evidence"
+      }
+    },
+    {
+      "id": "cloudflare",
+      "name": "Cloudflare",
+      "category": "Cloud",
+      "family": "general",
+      "landmark": "tower",
+      "color": "#86c5b5",
+      "detection": {
+        "kind": "manual-or-source-evidence"
+      }
+    },
+    {
+      "id": "vercel",
+      "name": "Vercel",
+      "category": "Cloud",
+      "family": "general",
+      "landmark": "tower",
+      "color": "#86c5b5",
+      "detection": {
+        "kind": "manual-or-source-evidence"
+      }
+    },
+    {
+      "id": "netlify",
+      "name": "Netlify",
+      "category": "Cloud",
+      "family": "general",
+      "landmark": "tower",
+      "color": "#86c5b5",
+      "detection": {
+        "kind": "manual-or-source-evidence"
+      }
+    },
+    {
+      "id": "digitalocean",
+      "name": "DigitalOcean",
+      "category": "Cloud",
+      "family": "general",
+      "landmark": "tower",
+      "color": "#86c5b5",
+      "detection": {
+        "kind": "manual-or-source-evidence"
+      }
+    },
+    {
+      "id": "fly-io",
+      "name": "Fly.io",
+      "category": "Cloud",
+      "family": "general",
+      "landmark": "tower",
+      "color": "#86c5b5",
+      "detection": {
+        "kind": "manual-or-source-evidence"
+      }
+    },
+    {
+      "id": "heroku",
+      "name": "Heroku",
+      "category": "Cloud",
+      "family": "general",
+      "landmark": "tower",
+      "color": "#86c5b5",
+      "detection": {
+        "kind": "manual-or-source-evidence"
+      }
+    },
+    {
+      "id": "render",
+      "name": "Render",
+      "category": "Cloud",
+      "family": "general",
+      "landmark": "tower",
+      "color": "#86c5b5",
+      "detection": {
+        "kind": "manual-or-source-evidence"
+      }
+    },
+    {
+      "id": "tcp-ip",
+      "name": "TCP/IP",
+      "category": "Networking & Telecom",
+      "family": "general",
+      "landmark": "tower",
+      "color": "#8ac8db",
+      "detection": {
+        "kind": "manual-or-source-evidence"
+      }
+    },
+    {
+      "id": "dns",
+      "name": "DNS",
+      "category": "Networking & Telecom",
+      "family": "general",
+      "landmark": "tower",
+      "color": "#8ac8db",
+      "detection": {
+        "kind": "manual-or-source-evidence"
+      }
+    },
+    {
+      "id": "http",
+      "name": "HTTP",
+      "category": "Networking & Telecom",
+      "family": "general",
+      "landmark": "tower",
+      "color": "#8ac8db",
+      "detection": {
+        "kind": "manual-or-source-evidence"
+      }
+    },
+    {
+      "id": "mqtt",
+      "name": "MQTT",
+      "category": "Networking & Telecom",
+      "family": "general",
+      "landmark": "tower",
+      "color": "#8ac8db",
+      "detection": {
+        "kind": "manual-or-source-evidence"
+      }
+    },
+    {
+      "id": "bgp",
+      "name": "BGP",
+      "category": "Networking & Telecom",
+      "family": "general",
+      "landmark": "tower",
+      "color": "#8ac8db",
+      "detection": {
+        "kind": "manual-or-source-evidence"
+      }
+    },
+    {
+      "id": "ospf",
+      "name": "OSPF",
+      "category": "Networking & Telecom",
+      "family": "general",
+      "landmark": "tower",
+      "color": "#8ac8db",
+      "detection": {
+        "kind": "manual-or-source-evidence"
+      }
+    },
+    {
+      "id": "sdn",
+      "name": "SDN",
+      "category": "Networking & Telecom",
+      "family": "general",
+      "landmark": "tower",
+      "color": "#8ac8db",
+      "detection": {
+        "kind": "manual-or-source-evidence"
+      }
+    },
+    {
+      "id": "nfv",
+      "name": "NFV",
+      "category": "Networking & Telecom",
+      "family": "general",
+      "landmark": "tower",
+      "color": "#8ac8db",
+      "detection": {
+        "kind": "manual-or-source-evidence"
+      }
+    },
+    {
+      "id": "open5gs",
+      "name": "Open5GS",
+      "category": "Networking & Telecom",
+      "family": "network",
+      "landmark": "antenna",
+      "color": "#8ac8db",
+      "detection": {
+        "kind": "manual-or-source-evidence"
+      }
+    },
+    {
+      "id": "free5gc",
+      "name": "free5GC",
+      "category": "Networking & Telecom",
+      "family": "network",
+      "landmark": "antenna",
+      "color": "#8ac8db",
+      "detection": {
+        "kind": "manual-or-source-evidence"
+      }
+    },
+    {
+      "id": "ueransim",
+      "name": "UERANSIM",
+      "category": "Networking & Telecom",
+      "family": "general",
+      "landmark": "tower",
+      "color": "#8ac8db",
+      "detection": {
+        "kind": "manual-or-source-evidence"
+      }
+    },
+    {
+      "id": "srsran",
+      "name": "srsRAN",
+      "category": "Networking & Telecom",
+      "family": "general",
+      "landmark": "tower",
+      "color": "#8ac8db",
+      "detection": {
+        "kind": "manual-or-source-evidence"
+      }
+    },
+    {
+      "id": "wireshark",
+      "name": "Wireshark",
+      "category": "Networking & Telecom",
+      "family": "network",
+      "landmark": "scanner",
+      "color": "#8ac8db",
+      "detection": {
+        "kind": "manual-or-source-evidence"
+      }
+    },
+    {
+      "id": "opentelemetry",
+      "name": "OpenTelemetry",
+      "category": "Networking & Telecom",
+      "family": "general",
+      "landmark": "tower",
+      "color": "#8ac8db",
+      "detection": {
+        "kind": "manual-or-source-evidence"
+      }
+    },
+    {
+      "id": "oauth-2-0",
+      "name": "OAuth 2.0",
+      "category": "Security",
+      "family": "security",
+      "landmark": "gate",
+      "color": "#83b6bd",
+      "detection": {
+        "kind": "manual-or-source-evidence"
+      }
+    },
+    {
+      "id": "openid-connect",
+      "name": "OpenID Connect",
+      "category": "Security",
+      "family": "general",
+      "landmark": "tower",
+      "color": "#83b6bd",
+      "detection": {
+        "kind": "manual-or-source-evidence"
+      }
+    },
+    {
+      "id": "jwt",
+      "name": "JWT",
+      "category": "Security",
+      "family": "security",
+      "landmark": "vault",
+      "color": "#83b6bd",
+      "detection": {
+        "kind": "dependency-or-evidence",
+        "hint": "jsonwebtoken"
+      }
+    },
+    {
+      "id": "tls",
+      "name": "TLS",
+      "category": "Security",
+      "family": "general",
+      "landmark": "tower",
+      "color": "#83b6bd",
+      "detection": {
+        "kind": "manual-or-source-evidence"
+      }
+    },
+    {
+      "id": "owasp",
+      "name": "OWASP",
+      "category": "Security",
+      "family": "general",
+      "landmark": "tower",
+      "color": "#83b6bd",
+      "detection": {
+        "kind": "manual-or-source-evidence"
+      }
+    },
+    {
+      "id": "sast",
+      "name": "SAST",
+      "category": "Security",
+      "family": "general",
+      "landmark": "tower",
+      "color": "#83b6bd",
+      "detection": {
+        "kind": "manual-or-source-evidence"
+      }
+    },
+    {
+      "id": "dast",
+      "name": "DAST",
+      "category": "Security",
+      "family": "general",
+      "landmark": "tower",
+      "color": "#83b6bd",
+      "detection": {
+        "kind": "manual-or-source-evidence"
+      }
+    },
+    {
+      "id": "semgrep",
+      "name": "Semgrep",
+      "category": "Security",
+      "family": "general",
+      "landmark": "tower",
+      "color": "#83b6bd",
+      "detection": {
+        "kind": "manual-or-source-evidence"
+      }
+    },
+    {
+      "id": "trivy",
+      "name": "Trivy",
+      "category": "Security",
+      "family": "general",
+      "landmark": "tower",
+      "color": "#83b6bd",
+      "detection": {
+        "kind": "manual-or-source-evidence"
+      }
+    },
+    {
+      "id": "sonarqube",
+      "name": "SonarQube",
+      "category": "Security",
+      "family": "general",
+      "landmark": "tower",
+      "color": "#83b6bd",
+      "detection": {
+        "kind": "manual-or-source-evidence"
+      }
+    },
+    {
+      "id": "hashicorp-vault",
+      "name": "HashiCorp Vault",
+      "category": "Security",
+      "family": "general",
+      "landmark": "tower",
+      "color": "#83b6bd",
+      "detection": {
+        "kind": "manual-or-source-evidence"
+      }
+    },
+    {
+      "id": "keycloak",
+      "name": "Keycloak",
+      "category": "Security",
+      "family": "general",
+      "landmark": "tower",
+      "color": "#83b6bd",
+      "detection": {
+        "kind": "manual-or-source-evidence"
+      }
+    },
+    {
+      "id": "pandas",
+      "name": "Pandas",
+      "category": "Data Engineering",
+      "family": "data",
+      "landmark": "archive",
+      "color": "#d6ac84",
+      "detection": {
+        "kind": "dependency-or-evidence",
+        "hint": "pandas"
+      }
+    },
+    {
+      "id": "polars",
+      "name": "Polars",
+      "category": "Data Engineering",
+      "family": "general",
+      "landmark": "tower",
+      "color": "#d6ac84",
+      "detection": {
+        "kind": "manual-or-source-evidence"
+      }
+    },
+    {
+      "id": "apache-spark",
+      "name": "Apache Spark",
+      "category": "Data Engineering",
+      "family": "data",
+      "landmark": "spark",
+      "color": "#d6ac84",
+      "detection": {
+        "kind": "dependency-or-evidence",
+        "hint": "pyspark"
+      }
+    },
+    {
+      "id": "kafka",
+      "name": "Kafka",
+      "category": "Data Engineering",
+      "family": "data",
+      "landmark": "pipeline",
+      "color": "#d6ac84",
+      "detection": {
+        "kind": "dependency-or-evidence",
+        "hint": "kafka"
+      }
+    },
+    {
+      "id": "airflow",
+      "name": "Airflow",
+      "category": "Data Engineering",
+      "family": "data",
+      "landmark": "control",
+      "color": "#d6ac84",
+      "detection": {
+        "kind": "dependency-or-evidence",
+        "hint": "apache-airflow"
+      }
+    },
+    {
+      "id": "dbt",
+      "name": "dbt",
+      "category": "Data Engineering",
+      "family": "general",
+      "landmark": "tower",
+      "color": "#d6ac84",
+      "detection": {
+        "kind": "manual-or-source-evidence"
+      }
+    },
+    {
+      "id": "duckdb",
+      "name": "DuckDB",
+      "category": "Data Engineering",
+      "family": "general",
+      "landmark": "tower",
+      "color": "#d6ac84",
+      "detection": {
+        "kind": "manual-or-source-evidence"
+      }
+    },
+    {
+      "id": "hadoop",
+      "name": "Hadoop",
+      "category": "Data Engineering",
+      "family": "general",
+      "landmark": "tower",
+      "color": "#d6ac84",
+      "detection": {
+        "kind": "manual-or-source-evidence"
+      }
+    },
+    {
+      "id": "flink",
+      "name": "Flink",
+      "category": "Data Engineering",
+      "family": "general",
+      "landmark": "tower",
+      "color": "#d6ac84",
+      "detection": {
+        "kind": "manual-or-source-evidence"
+      }
+    },
+    {
+      "id": "apache-beam",
+      "name": "Apache Beam",
+      "category": "Data Engineering",
+      "family": "general",
+      "landmark": "tower",
+      "color": "#d6ac84",
+      "detection": {
+        "kind": "manual-or-source-evidence"
+      }
+    },
+    {
+      "id": "great-expectations",
+      "name": "Great Expectations",
+      "category": "Data Engineering",
+      "family": "general",
+      "landmark": "tower",
+      "color": "#d6ac84",
+      "detection": {
+        "kind": "manual-or-source-evidence"
+      }
+    },
+    {
+      "id": "delta-lake",
+      "name": "Delta Lake",
+      "category": "Data Engineering",
+      "family": "general",
+      "landmark": "tower",
+      "color": "#d6ac84",
+      "detection": {
+        "kind": "manual-or-source-evidence"
+      }
+    },
+    {
+      "id": "pytest",
+      "name": "Pytest",
+      "category": "Testing",
+      "family": "testing",
+      "landmark": "inspection",
+      "color": "#b9c3a6",
+      "detection": {
+        "kind": "dependency-or-evidence",
+        "hint": "pytest"
+      }
+    },
+    {
+      "id": "jest",
+      "name": "Jest",
+      "category": "Testing",
+      "family": "general",
+      "landmark": "tower",
+      "color": "#b9c3a6",
+      "detection": {
+        "kind": "manual-or-source-evidence"
+      }
+    },
+    {
+      "id": "vitest",
+      "name": "Vitest",
+      "category": "Testing",
+      "family": "general",
+      "landmark": "tower",
+      "color": "#b9c3a6",
+      "detection": {
+        "kind": "manual-or-source-evidence"
+      }
+    },
+    {
+      "id": "playwright",
+      "name": "Playwright",
+      "category": "Testing",
+      "family": "testing",
+      "landmark": "inspection",
+      "color": "#b9c3a6",
+      "detection": {
+        "kind": "dependency-or-evidence",
+        "hint": "playwright"
+      }
+    },
+    {
+      "id": "cypress",
+      "name": "Cypress",
+      "category": "Testing",
+      "family": "general",
+      "landmark": "tower",
+      "color": "#b9c3a6",
+      "detection": {
+        "kind": "manual-or-source-evidence"
+      }
+    },
+    {
+      "id": "selenium",
+      "name": "Selenium",
+      "category": "Testing",
+      "family": "general",
+      "landmark": "tower",
+      "color": "#b9c3a6",
+      "detection": {
+        "kind": "manual-or-source-evidence"
+      }
+    },
+    {
+      "id": "junit",
+      "name": "JUnit",
+      "category": "Testing",
+      "family": "general",
+      "landmark": "tower",
+      "color": "#b9c3a6",
+      "detection": {
+        "kind": "manual-or-source-evidence"
+      }
+    },
+    {
+      "id": "mocha",
+      "name": "Mocha",
+      "category": "Testing",
+      "family": "general",
+      "landmark": "tower",
+      "color": "#b9c3a6",
+      "detection": {
+        "kind": "manual-or-source-evidence"
+      }
+    },
+    {
+      "id": "testcontainers",
+      "name": "Testcontainers",
+      "category": "Testing",
+      "family": "general",
+      "landmark": "tower",
+      "color": "#b9c3a6",
+      "detection": {
+        "kind": "manual-or-source-evidence"
+      }
+    },
+    {
+      "id": "storybook",
+      "name": "Storybook",
+      "category": "Testing",
+      "family": "general",
+      "landmark": "tower",
+      "color": "#b9c3a6",
+      "detection": {
+        "kind": "manual-or-source-evidence"
+      }
+    },
+    {
+      "id": "flutter",
+      "name": "Flutter",
+      "category": "Mobile",
+      "family": "general",
+      "landmark": "tower",
+      "color": "#eeaf95",
+      "detection": {
+        "kind": "manual-or-source-evidence"
+      }
+    },
+    {
+      "id": "react-native",
+      "name": "React Native",
+      "category": "Mobile",
+      "family": "general",
+      "landmark": "tower",
+      "color": "#eeaf95",
+      "detection": {
+        "kind": "manual-or-source-evidence"
+      }
+    },
+    {
+      "id": "android",
+      "name": "Android",
+      "category": "Mobile",
+      "family": "general",
+      "landmark": "tower",
+      "color": "#eeaf95",
+      "detection": {
+        "kind": "manual-or-source-evidence"
+      }
+    },
+    {
+      "id": "jetpack-compose",
+      "name": "Jetpack Compose",
+      "category": "Mobile",
+      "family": "general",
+      "landmark": "tower",
+      "color": "#eeaf95",
+      "detection": {
+        "kind": "manual-or-source-evidence"
+      }
+    },
+    {
+      "id": "swiftui",
+      "name": "SwiftUI",
+      "category": "Mobile",
+      "family": "general",
+      "landmark": "tower",
+      "color": "#eeaf95",
+      "detection": {
+        "kind": "manual-or-source-evidence"
+      }
+    },
+    {
+      "id": "expo",
+      "name": "Expo",
+      "category": "Mobile",
+      "family": "general",
+      "landmark": "tower",
+      "color": "#eeaf95",
+      "detection": {
+        "kind": "manual-or-source-evidence"
+      }
+    },
+    {
+      "id": "ionic",
+      "name": "Ionic",
+      "category": "Mobile",
+      "family": "general",
+      "landmark": "tower",
+      "color": "#eeaf95",
+      "detection": {
+        "kind": "manual-or-source-evidence"
+      }
+    },
+    {
+      "id": "vite",
+      "name": "Vite",
+      "category": "Build & Tooling",
+      "family": "frontend",
+      "landmark": "prism",
+      "color": "#b7b9ce",
+      "detection": {
+        "kind": "dependency-or-evidence",
+        "hint": "vite"
+      }
+    },
+    {
+      "id": "webpack",
+      "name": "Webpack",
+      "category": "Build & Tooling",
+      "family": "general",
+      "landmark": "tower",
+      "color": "#b7b9ce",
+      "detection": {
+        "kind": "manual-or-source-evidence"
+      }
+    },
+    {
+      "id": "babel",
+      "name": "Babel",
+      "category": "Build & Tooling",
+      "family": "general",
+      "landmark": "tower",
+      "color": "#b7b9ce",
+      "detection": {
+        "kind": "manual-or-source-evidence"
+      }
+    },
+    {
+      "id": "eslint",
+      "name": "ESLint",
+      "category": "Build & Tooling",
+      "family": "general",
+      "landmark": "tower",
+      "color": "#b7b9ce",
+      "detection": {
+        "kind": "manual-or-source-evidence"
+      }
+    },
+    {
+      "id": "prettier",
+      "name": "Prettier",
+      "category": "Build & Tooling",
+      "family": "general",
+      "landmark": "tower",
+      "color": "#b7b9ce",
+      "detection": {
+        "kind": "manual-or-source-evidence"
+      }
+    },
+    {
+      "id": "maven",
+      "name": "Maven",
+      "category": "Build & Tooling",
+      "family": "general",
+      "landmark": "tower",
+      "color": "#b7b9ce",
+      "detection": {
+        "kind": "manual-or-source-evidence"
+      }
+    },
+    {
+      "id": "gradle",
+      "name": "Gradle",
+      "category": "Build & Tooling",
+      "family": "general",
+      "landmark": "tower",
+      "color": "#b7b9ce",
+      "detection": {
+        "kind": "manual-or-source-evidence"
+      }
+    },
+    {
+      "id": "cargo",
+      "name": "Cargo",
+      "category": "Build & Tooling",
+      "family": "general",
+      "landmark": "tower",
+      "color": "#b7b9ce",
+      "detection": {
+        "kind": "manual-or-source-evidence"
+      }
+    },
+    {
+      "id": "poetry",
+      "name": "Poetry",
+      "category": "Build & Tooling",
+      "family": "general",
+      "landmark": "tower",
+      "color": "#b7b9ce",
+      "detection": {
+        "kind": "manual-or-source-evidence"
+      }
+    },
+    {
+      "id": "uv",
+      "name": "uv",
+      "category": "Build & Tooling",
+      "family": "general",
+      "landmark": "tower",
+      "color": "#b7b9ce",
+      "detection": {
+        "kind": "manual-or-source-evidence"
+      }
+    },
+    {
+      "id": "pnpm",
+      "name": "pnpm",
+      "category": "Build & Tooling",
+      "family": "general",
+      "landmark": "tower",
+      "color": "#b7b9ce",
+      "detection": {
+        "kind": "manual-or-source-evidence"
+      }
+    },
+    {
+      "id": "npm",
+      "name": "npm",
+      "category": "Build & Tooling",
+      "family": "general",
+      "landmark": "tower",
+      "color": "#b7b9ce",
+      "detection": {
+        "kind": "manual-or-source-evidence"
+      }
+    },
+    {
+      "id": "yarn",
+      "name": "Yarn",
+      "category": "Build & Tooling",
+      "family": "general",
+      "landmark": "tower",
+      "color": "#b7b9ce",
+      "detection": {
+        "kind": "manual-or-source-evidence"
+      }
+    },
+    {
+      "id": "cmake",
+      "name": "CMake",
+      "category": "Build & Tooling",
+      "family": "general",
+      "landmark": "tower",
+      "color": "#b7b9ce",
+      "detection": {
+        "kind": "manual-or-source-evidence"
+      }
+    },
+    {
+      "id": "make",
+      "name": "Make",
+      "category": "Build & Tooling",
+      "family": "general",
+      "landmark": "tower",
+      "color": "#b7b9ce",
+      "detection": {
+        "kind": "manual-or-source-evidence"
+      }
+    },
+    {
+      "id": "software-architecture",
+      "name": "Software Architecture",
+      "category": "Engineering Skills",
+      "family": "general",
+      "landmark": "tower",
+      "color": "#c9c4b3",
+      "detection": {
+        "kind": "manual-or-source-evidence"
+      }
+    },
+    {
+      "id": "microservices",
+      "name": "Microservices",
+      "category": "Engineering Skills",
+      "family": "general",
+      "landmark": "tower",
+      "color": "#c9c4b3",
+      "detection": {
+        "kind": "manual-or-source-evidence"
+      }
+    },
+    {
+      "id": "domain-driven-design",
+      "name": "Domain-Driven Design",
+      "category": "Engineering Skills",
+      "family": "general",
+      "landmark": "tower",
+      "color": "#c9c4b3",
+      "detection": {
+        "kind": "manual-or-source-evidence"
+      }
+    },
+    {
+      "id": "api-design",
+      "name": "API Design",
+      "category": "Engineering Skills",
+      "family": "general",
+      "landmark": "tower",
+      "color": "#c9c4b3",
+      "detection": {
+        "kind": "manual-or-source-evidence"
+      }
+    },
+    {
+      "id": "authentication",
+      "name": "Authentication",
+      "category": "Engineering Skills",
+      "family": "general",
+      "landmark": "tower",
+      "color": "#c9c4b3",
+      "detection": {
+        "kind": "manual-or-source-evidence"
+      }
+    },
+    {
+      "id": "distributed-systems",
+      "name": "Distributed Systems",
+      "category": "Engineering Skills",
+      "family": "general",
+      "landmark": "tower",
+      "color": "#c9c4b3",
+      "detection": {
+        "kind": "manual-or-source-evidence"
+      }
+    },
+    {
+      "id": "concurrency",
+      "name": "Concurrency",
+      "category": "Engineering Skills",
+      "family": "general",
+      "landmark": "tower",
+      "color": "#c9c4b3",
+      "detection": {
+        "kind": "manual-or-source-evidence"
+      }
+    },
+    {
+      "id": "event-driven-architecture",
+      "name": "Event-Driven Architecture",
+      "category": "Engineering Skills",
+      "family": "general",
+      "landmark": "tower",
+      "color": "#c9c4b3",
+      "detection": {
+        "kind": "manual-or-source-evidence"
+      }
+    },
+    {
+      "id": "etl",
+      "name": "ETL",
+      "category": "Engineering Skills",
+      "family": "general",
+      "landmark": "tower",
+      "color": "#c9c4b3",
+      "detection": {
+        "kind": "manual-or-source-evidence"
+      }
+    },
+    {
+      "id": "ci-cd",
+      "name": "CI/CD",
+      "category": "Engineering Skills",
+      "family": "general",
+      "landmark": "tower",
+      "color": "#c9c4b3",
+      "detection": {
+        "kind": "manual-or-source-evidence"
+      }
+    },
+    {
+      "id": "observability",
+      "name": "Observability",
+      "category": "Engineering Skills",
+      "family": "general",
+      "landmark": "tower",
+      "color": "#c9c4b3",
+      "detection": {
+        "kind": "manual-or-source-evidence"
+      }
+    },
+    {
+      "id": "threat-modeling",
+      "name": "Threat Modeling",
+      "category": "Engineering Skills",
+      "family": "general",
+      "landmark": "tower",
+      "color": "#c9c4b3",
+      "detection": {
+        "kind": "manual-or-source-evidence"
+      }
+    },
+    {
+      "id": "unit-testing",
+      "name": "Unit Testing",
+      "category": "Engineering Skills",
+      "family": "general",
+      "landmark": "tower",
+      "color": "#c9c4b3",
+      "detection": {
+        "kind": "manual-or-source-evidence"
+      }
+    },
+    {
+      "id": "integration-testing",
+      "name": "Integration Testing",
+      "category": "Engineering Skills",
+      "family": "general",
+      "landmark": "tower",
+      "color": "#c9c4b3",
+      "detection": {
+        "kind": "manual-or-source-evidence"
+      }
+    },
+    {
+      "id": "performance-testing",
+      "name": "Performance Testing",
+      "category": "Engineering Skills",
+      "family": "general",
+      "landmark": "tower",
+      "color": "#c9c4b3",
+      "detection": {
+        "kind": "manual-or-source-evidence"
+      }
+    },
+    {
+      "id": "experiment-design",
+      "name": "Experiment Design",
+      "category": "Engineering Skills",
+      "family": "general",
+      "landmark": "tower",
+      "color": "#c9c4b3",
+      "detection": {
+        "kind": "manual-or-source-evidence"
+      }
+    },
+    {
+      "id": "benchmarking",
+      "name": "Benchmarking",
+      "category": "Engineering Skills",
+      "family": "general",
+      "landmark": "tower",
+      "color": "#c9c4b3",
+      "detection": {
+        "kind": "manual-or-source-evidence"
+      }
+    },
+    {
+      "id": "reproducibility",
+      "name": "Reproducibility",
+      "category": "Engineering Skills",
+      "family": "general",
+      "landmark": "tower",
+      "color": "#c9c4b3",
+      "detection": {
+        "kind": "manual-or-source-evidence"
+      }
+    },
+    {
+      "id": "2g",
+      "name": "2G",
+      "category": "Telecommunications & Networking",
+      "family": "domain",
+      "landmark": "signal-tower",
+      "color": "#58bbac",
+      "detection": {
+        "kind": "cv-text-or-source-evidence"
+      }
+    },
+    {
+      "id": "3g",
+      "name": "3G",
+      "category": "Telecommunications & Networking",
+      "family": "domain",
+      "landmark": "signal-tower",
+      "color": "#58bbac",
+      "detection": {
+        "kind": "cv-text-or-source-evidence"
+      }
+    },
+    {
+      "id": "4g",
+      "name": "4G",
+      "category": "Telecommunications & Networking",
+      "family": "domain",
+      "landmark": "signal-tower",
+      "color": "#58bbac",
+      "detection": {
+        "kind": "cv-text-or-source-evidence"
+      }
+    },
+    {
+      "id": "lte",
+      "name": "LTE",
+      "category": "Telecommunications & Networking",
+      "family": "domain",
+      "landmark": "signal-tower",
+      "color": "#58bbac",
+      "detection": {
+        "kind": "cv-text-or-source-evidence"
+      }
+    },
+    {
+      "id": "5g",
+      "name": "5G",
+      "category": "Telecommunications & Networking",
+      "family": "domain",
+      "landmark": "signal-tower",
+      "color": "#58bbac",
+      "detection": {
+        "kind": "cv-text-or-source-evidence"
+      }
+    },
+    {
+      "id": "5g-core",
+      "name": "5G Core",
+      "category": "Telecommunications & Networking",
+      "family": "domain",
+      "landmark": "signal-tower",
+      "color": "#58bbac",
+      "detection": {
+        "kind": "cv-text-or-source-evidence"
+      }
+    },
+    {
+      "id": "5g-nr",
+      "name": "5G NR",
+      "category": "Telecommunications & Networking",
+      "family": "domain",
+      "landmark": "signal-tower",
+      "color": "#58bbac",
+      "detection": {
+        "kind": "cv-text-or-source-evidence"
+      }
+    },
+    {
+      "id": "6g",
+      "name": "6G",
+      "category": "Telecommunications & Networking",
+      "family": "domain",
+      "landmark": "signal-tower",
+      "color": "#58bbac",
+      "detection": {
+        "kind": "cv-text-or-source-evidence"
+      }
+    },
+    {
+      "id": "network-slicing",
+      "name": "Network Slicing",
+      "category": "Telecommunications & Networking",
+      "family": "domain",
+      "landmark": "signal-tower",
+      "color": "#58bbac",
+      "detection": {
+        "kind": "cv-text-or-source-evidence"
+      }
+    },
+    {
+      "id": "telecom-monitoring",
+      "name": "Telecom Monitoring",
+      "category": "Telecommunications & Networking",
+      "family": "domain",
+      "landmark": "signal-tower",
+      "color": "#58bbac",
+      "detection": {
+        "kind": "cv-text-or-source-evidence"
+      }
+    },
+    {
+      "id": "network-anomaly-detection",
+      "name": "Network Anomaly Detection",
+      "category": "Telecommunications & Networking",
+      "family": "domain",
+      "landmark": "signal-tower",
+      "color": "#58bbac",
+      "detection": {
+        "kind": "cv-text-or-source-evidence"
+      }
+    },
+    {
+      "id": "angularjs",
+      "name": "AngularJS",
+      "category": "Frontend",
+      "family": "framework",
+      "landmark": "prism",
+      "color": "#58bbac",
+      "detection": {
+        "kind": "cv-text-or-source-evidence"
+      }
+    }
+  ]
+}

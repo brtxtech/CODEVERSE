@@ -1,0 +1,20 @@
+services:
+  app:
+    build: .
+    env_file: .env.deploy
+    environment:
+      CODEVERSE_SECURE_MODE: "1"
+      CODEVERSE_REQUIRE_ADMIN_MFA: "1"
+    ports: ["127.0.0.1:8000:8000"]
+    restart: unless-stopped
+    read_only: true
+    tmpfs: ["/tmp:size=32m,noexec,nosuid"]
+    cap_drop: [ALL]
+    security_opt: ["no-new-privileges:true"]
+    mem_limit: 512m
+    cpus: 1
+    healthcheck:
+      test: ["CMD", "python", "-c", "import urllib.request; urllib.request.urlopen('http://localhost:8000/api/health')"]
+      interval: 30s
+      timeout: 5s
+      retries: 3

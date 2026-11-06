@@ -1,0 +1,8 @@
+import {sanitizeUsername,transform} from './model.js';
+const API='https://api.github.com';
+async function get(path,signal){const r=await fetch(API+path,{signal,headers:{Accept:'application/vnd.github+json','X-GitHub-Api-Version':'2022-11-28'}});if(!r.ok){if(r.status===404)throw Error('GitHub user not found. Check the username.');if(r.status===403||r.status===429)throw Error('GitHub API rate limit reached. Try again later or load the cached snapshot.');throw Error(`GitHub returned HTTP ${r.status}.`);}return r.json();}
+/** Public endpoint coverage only. GitHub does not provide full historical commits or private contribution calendars here. */
+export async function fetchGitHub(username,signal){const name=sanitizeUsername(username);if(!name)throw Error('Enter a valid GitHub username.');const user=await get(`/users/${name}`,signal);const repoEndpoint=user.type==='Organization'?`/orgs/${name}/repos`:`/users/${name}/repos`;let repos=[],events=[];for(let page=1;page<=3;page++){const batch=await get(`${repoEndpoint}?sort=pushed&per_page=100&page=${page}`,signal);repos.push(...batch);if(batch.length<100)break;}
+if(user.type!=='Organization'){for(let page=1;page<=3;page++){try{const batch=await get(`/users/${name}/events/public?per_page=100&page=${page}`,signal);events.push(...batch);if(batch.length<100)break;}catch(e){if(page===1)break;throw e;}}}
+return transform({username:user.login,repos,events,createdAt:new Date().toISOString()});}
+export async function fetchSnapshot(){try{const r=await fetch(`${import.meta.env.BASE_URL}data.json`,{cache:'no-store'});if(!r.ok)return null;return transform(await r.json());}catch{return null;}}

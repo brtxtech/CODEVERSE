@@ -1,0 +1,70 @@
+[
+  {
+    "path": "index.html",
+    "action": "older variant preserved"
+  },
+  {
+    "path": "vite.config.js",
+    "action": "older variant preserved"
+  },
+  {
+    "path": ".gitignore",
+    "action": "older variant preserved"
+  },
+  {
+    "path": "data/technology-taxonomy.json",
+    "action": "older variant preserved"
+  },
+  {
+    "path": "tests/model.test.js",
+    "action": "older variant preserved"
+  },
+  {
+    "path": "public/technology-taxonomy.json",
+    "action": "older variant preserved"
+  },
+  {
+    "path": "src/model.js",
+    "action": "older variant preserved"
+  },
+  {
+    "path": "src/github.js",
+    "action": "older variant preserved"
+  },
+  {
+    "path": "src/main.js",
+    "action": "older variant preserved"
+  },
+  {
+    "path": "src/renderer.js",
+    "action": "older variant preserved"
+  },
+  {
+    "path": ".github/workflows/deploy.yml",
+    "action": "older variant preserved"
+  },
+  {
+    "path": "services/api/github_client.py",
+    "action": "older variant preserved"
+  },
+  {
+    "path": "services/api/identity.py",
+    "action": "older variant preserved"
+  },
+  {
+    "path": "services/api/main.py",
+    "action": "older variant preserved"
+  },
+  {
+    "path": "services/api/requirements.txt",
+    "action": "older variant preserved"
+  },
+  {
+    "path": "services/api/core.py",
+    "action": "older variant preserved"
+  },
+  {
+    "path": "apps/studio/index.html",
+    "action": "older variant preserved"
+  }
+]

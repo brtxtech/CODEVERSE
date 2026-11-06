@@ -1,0 +1,12 @@
+# Dedicated worker host only. Docker socket grants orchestrator host control.
+services:
+  runner:
+    build: ../services/runner
+    environment:
+      CODEVERSE_RUNNER_TOKEN: ${CODEVERSE_RUNNER_TOKEN:?Set a long random token}
+      CODEVERSE_SKILL_IMAGE: codeverse-skill:1
+    ports: ["127.0.0.1:8080:8080"]
+    volumes: ["/var/run/docker.sock:/var/run/docker.sock"]
+    restart: unless-stopped
+    mem_limit: 256m
+    cpus: 1

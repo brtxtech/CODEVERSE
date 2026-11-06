@@ -1,0 +1,129 @@
+<!doctype html>
+<html lang="en"><head><meta charset="utf-8">
+<title>CV → Jobs → Repos pipeline on Supabase</title>
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<style>
+:root{color-scheme:light dark;--bg:#f5f6f4;--dot:#d3d8d4;--card:#fff;--ink:#17201b;--mute:#4d5852;--edge:#5b6660;--bd:#c9d0cb;--code:#eceeeb;--focus:#0b6b45;--btn:#0b6b45;--btn-ink:#fff;
+--storage:#8a4b00;--fn:#5b3fd1;--pg:#0b6b45;--tbl:#3d5a80;--flow:#0b6b45}
+@media (prefers-color-scheme:dark){:root{--bg:#111613;--dot:#27302a;--card:#1a211d;--ink:#eef2ef;--mute:#b4beb8;--edge:#8e9a93;--bd:#3a4540;--code:#0e1210;--focus:#5fd9a1;--btn:#3ecf8e;--btn-ink:#06231a;
+--storage:#f0b25c;--fn:#b8a6ff;--pg:#5fd9a1;--tbl:#8fb4e8;--flow:#3ecf8e}}
+*{box-sizing:border-box}
+html,body{margin:0;background:var(--bg);color:var(--ink);font:15px/1.5 ui-sans-serif,system-ui,-apple-system,"Segoe UI",sans-serif}
+:root{padding:env(safe-area-inset-top,0) env(safe-area-inset-right,0) env(safe-area-inset-bottom,0) env(safe-area-inset-left,0)}
+code,pre{font:13px/1.5 ui-monospace,Menlo,Consolas,monospace}
+.sr{position:absolute;width:1px;height:1px;overflow:hidden;clip:rect(0 0 0 0);white-space:nowrap}
+:focus-visible{outline:3px solid var(--focus);outline-offset:3px}
+header{display:flex;flex-wrap:wrap;gap:12px 24px;align-items:center;justify-content:space-between;padding:16px 20px}
+h1{font-size:19px;margin:0}header p{margin:4px 0 0;color:var(--mute);max-width:60ch}
+#run{min-height:44px;padding:0 20px;border:0;border-radius:8px;background:var(--btn);color:var(--btn-ink);font:600 15px inherit;cursor:pointer}
+#run:disabled{opacity:.7;cursor:progress}
+.cv{overflow-x:auto;background:radial-gradient(var(--dot) 1px,transparent 1px) 0 0/18px 18px;border-block:1px solid var(--bd)}
+#g{position:relative;width:1240px;height:480px}
+svg{position:absolute;inset:0}
+path{fill:none;stroke:var(--edge);stroke-width:2}path.d{stroke-dasharray:6 6}
+path.on{stroke:var(--flow);stroke-width:3;stroke-dasharray:8 6;animation:fl .7s linear infinite}
+@keyframes fl{to{stroke-dashoffset:-14}}
+@media (prefers-reduced-motion:reduce){path.on{animation:none}}
+circle{fill:var(--card);stroke:var(--edge);stroke-width:2}
+svg text{fill:var(--mute);font-size:13px}
+.n{position:absolute;width:200px;padding:10px 12px 12px;text-align:left;font:inherit;color:var(--ink);background:var(--card);
+border:2px solid var(--bd);border-left:7px solid var(--c);border-radius:10px;cursor:pointer;display:grid;gap:2px}
+.n[data-layer=storage]{--c:var(--storage)}.n[data-layer=fn]{--c:var(--fn)}.n[data-layer=pg]{--c:var(--pg)}.n[data-layer=tbl]{--c:var(--tbl)}
+.n.data{border-style:dashed;border-left-style:solid}
+.n[aria-pressed=true]{border-color:var(--ink);border-width:3px;border-left-width:7px;padding:9px 11px 11px}
+.n.run{box-shadow:0 0 0 4px var(--c)}
+.n .l{color:var(--c);font-size:13px;font-weight:600}
+.n b{font-size:15px}.n code{color:var(--mute);overflow-wrap:anywhere}
+.n .s{color:var(--mute);font-size:13px;margin-top:2px}
+.n .ok{display:none;font-size:13px;font-weight:600;color:var(--c)}.n.done .ok{display:block}
+#pn{padding:20px;max-width:1000px}#pn h2{margin:0 0 4px;font-size:17px}#pn p{margin:0 0 12px;color:var(--mute);max-width:70ch}
+.tw{overflow:auto;border:1px solid var(--bd);border-radius:8px;margin-bottom:12px;max-height:320px}
+table{border-collapse:collapse;width:100%;font-size:14px}th,td{text-align:left;padding:8px 12px;border-bottom:1px solid var(--bd);vertical-align:top}
+th{position:sticky;top:0;background:var(--code)}tr:last-child td{border-bottom:0}
+dl{display:grid;grid-template-columns:max-content 1fr;gap:6px 16px;margin:0 0 12px}dt{font-weight:600}dd{margin:0;overflow-wrap:anywhere}
+details summary{cursor:pointer;min-height:32px}
+pre{background:var(--code);border:1px solid var(--bd);border-radius:8px;padding:12px;overflow:auto;max-height:280px;margin:8px 0 0}
+.lg{display:flex;flex-wrap:wrap;gap:8px 24px;padding:0 20px 24px;margin:0;list-style:none;color:var(--mute);font-size:13px}
+.lg i{display:inline-block;width:14px;height:14px;border-radius:3px;background:var(--c);vertical-align:-2px;margin-right:6px}
+</style></head><body>
+<header><div><h1>CV → job profiles → companies → skills → repositories</h1>
+<p>How the pipeline runs on Supabase. Select a step to see what it returns for a sample CV, or run the whole flow.</p></div>
+<button id="run" type="button">Run workflow</button></header>
+<main>
+<div class="cv" role="region" aria-label="Pipeline diagram (scrolls sideways on small screens)" tabindex="0"><div id="g"><svg id="sv" width="1240" height="480" aria-hidden="true" focusable="false"></svg></div></div>
+<section id="pn" aria-labelledby="pt"></section>
+<ul class="lg" aria-label="Legend">
+<li style="--c:var(--storage)"><i></i>Storage</li><li style="--c:var(--fn)"><i></i>Edge Function</li>
+<li style="--c:var(--pg)"><i></i>Postgres function (rpc)</li><li style="--c:var(--tbl)"><i></i>Table</li>
+<li>Solid line: data passed on. Dashed line: reference data or extra link.</li></ul>
+</main>
+<p id="st" class="sr" role="status"></p>
+<script>
+const CV={contact:{name:"Ana García López",location:{city:"bilbao",country:"ES",region:"Europe",area:"Basque Country"}},skills:["python","sql","docker","git","linux","kafka","pytorch","power bi","machine learning","ctf"],interests:["open source","ctf","running"]};
+const JOBS=[{title:"Machine Learning Engineer",score:86,you_have:["docker","machine learning","python","pytorch"],to_learn:["tensorflow"]},
+{title:"Analytics Engineer",score:75,you_have:["git","python","sql"],to_learn:["dbt"]},{title:"Marketing Data Analyst",score:75,you_have:["power bi","python","sql"],to_learn:["excel"]},
+{title:"Software Engineer",score:64.5,you_have:["git","python","sql"],to_learn:["java","testing"]},{title:"Backend Developer",score:64.5,you_have:["docker","python","sql"],to_learn:["java","node.js"]}];
+const COS=[["BBVA","same city",90],["Accenture","same city",90],["Capgemini","same city",80],["Telefónica","same city",80],["Ibermática","same city",80],["Tecnalia","same city",80],["NTT DATA","same city",80],["Vicomtech","same area (Basque Country)",75],["Indra / Minsait","same city",70],["Amadeus","same country",60]].map(([name,near_you,score])=>({name,near_you,score}));
+const SK=[{skill:"java",needed_by:["Software Engineer","Backend Developer"]},{skill:"tensorflow",needed_by:["Machine Learning Engineer"]},{skill:"dbt",needed_by:["Analytics Engineer"]},{skill:"excel",needed_by:["Marketing Data Analyst"]},{skill:"testing",needed_by:["Software Engineer"]},{skill:"node.js",needed_by:["Backend Developer"]}];
+const RP=[{full_name:"bregman-arie/devops-exercises",score:88.5,matched_on:["python","linux","git","sql","docker"]},{full_name:"Gallopsled/pwntools",score:73,matched_on:["python","ctf","linux"]}];
+const LAYER={storage:"Storage",fn:"Edge Function",pg:"Postgres function",tbl:"Table"};
+const N=[
+{id:"cv",x:30,y:130,layer:"fn",t:"CV upload",k:"process-cv",s:"Reads the PDF from the private cvs bucket; Claude extracts name, location, skills.",o:CV,
+ d:"The user uploads a PDF to cvs/<uid>/. The Edge Function validates the request, checks the rate limit, extracts the CV with Claude (skill spelling guided by the skill_vocabulary view), then saves the result in public.cvs. Row Level Security keeps each CV private to its owner."},
+{id:"jobs",x:290,y:130,layer:"pg",t:"Job profiles",k:"rpc recommend_jobs()",s:"Top roles for the skills, plus the skills still missing.",o:JOBS,d:"Compares the CV skills with the 179 roles in public.jobs. A GIN index on skills keeps it fast; the score is 70% coverage plus 30% for having at least four matching skills."},
+{id:"cos",x:550,y:130,layer:"pg",t:"Companies near you",k:"rpc recommend_companies()",s:"Same city first, then area, country, region.",o:COS,d:"Each company is ranked by its closest office. Base score: city 80, area 75, country 60, region 40, plus 10 when the company focus matches the matched jobs."},
+{id:"sk",x:810,y:130,layer:"pg",t:"Skills to develop",k:"rpc skill_gap()",s:"Missing skills, needed by the most roles first.",o:SK,d:"Adds up the to_learn skills of the matched jobs. Skills needed by more roles come first."},
+{id:"rp",x:1020,y:130,layer:"pg",t:"Repositories",k:"rpc recommend_repos()",s:"Repos to practise those skills.",o:RP,d:"Ranks public.repos by topic overlap (60 points), recent activity (25) and beginner-friendliness (15). The topics come from the CV skills plus the github_topics of the matched jobs."},
+{id:"d1",x:290,y:330,layer:"tbl",data:1,t:"Jobs",k:"public.jobs",s:"179 roles, 16 families.",o:{rows:179,columns:["id","title","title_es","family","skills","github_topics","company_focus","entry_level"]},d:"Reference data, readable by everyone, writable only by the service role. CHECK constraints keep every term lower-case and unique."},
+{id:"d2",x:550,y:330,layer:"tbl",data:1,t:"Companies and places",k:"companies · company_offices · geo_places",s:"One row per office; city → area/country/region.",o:{tables:["companies","company_offices","geo_places"],note:"Verify offices on each careers page."},d:"Replaces companies.json and geo.py. Indexes on city, area, country and region serve each proximity level."},
+{id:"d3",x:1020,y:330,layer:"tbl",data:1,t:"Repository catalog",k:"public.repos",s:"Stars, topics, activity, license.",o:{fill_with:"scheduled upsert from api.github.com/search/repositories, or your own list"},d:"Candidate repositories. A GIN index on topics lets the matcher skip every repo without a shared topic."}];
+const E=[["cv","jobs"],["jobs","cos"],["cos","sk"],["sk","rp"]],X=[["jobs","sk","to_learn"],["jobs","rp","github_topics"]],D=[["d1","jobs"],["d2","cos"],["d3","rp"]];
+const CHAIN=E.map(e=>e[0]).concat("rp");
+const $=s=>document.querySelector(s),g=$("#g"),sv=$("#sv"),by={},ps={},NS="http://www.w3.org/2000/svg";
+const el=(t,a={},...k)=>{const e=document.createElement(t);for(const[x,v]of Object.entries(a))x in e?e[x]=v:e.setAttribute(x,v);e.append(...k);return e};
+const sel=(t,a)=>{const e=document.createElementNS(NS,t);for(const[k,v]of Object.entries(a))e.setAttribute(k,v);sv.append(e);return e};
+const say=m=>$("#st").textContent=m;
+
+N.forEach(n=>{const i=CHAIN.indexOf(n.id)+1;
+ const b=el("button",{type:"button",className:"n"+(n.data?" data":""),
+  "aria-pressed":"false","aria-label":`${n.data?"Data source":`Step ${i} of ${CHAIN.length}`}: ${n.t}. ${LAYER[n.layer]} ${n.k}. ${n.s}`},
+  el("span",{className:"l",textContent:LAYER[n.layer]}),el("b",{textContent:n.t}),el("code",{textContent:n.k}),el("span",{className:"s",textContent:n.s}),el("span",{className:"ok",textContent:"Done"}));
+ b.dataset.layer=n.layer;b.style.cssText=`left:${n.x}px;top:${n.y}px`;b.onclick=()=>show(n.id);g.append(b);by[n.id]=b});
+
+const pt=(id,s)=>{const b=by[id],x=b.offsetLeft,y=b.offsetTop,w=b.offsetWidth,h=b.offsetHeight;return{l:[x,y+h/2],r:[x+w,y+h/2],t:[x+w/2,y],b:[x+w/2,y+h]}[s]};
+function link(a,sa,b,sb,{dashed,arc,label}={}){const A=pt(a,sa),B=pt(b,sb);let d;
+ if(arc)d=`M${A} C${A[0]},${A[1]-90} ${B[0]},${B[1]-90} ${B}`;
+ else if(sa==="r"){const dx=Math.abs(B[0]-A[0])/2;d=`M${A} C${A[0]+dx},${A[1]} ${B[0]-dx},${B[1]} ${B}`}
+ else{const dy=(B[1]-A[1])/2;d=`M${A} C${A[0]},${A[1]+dy} ${B[0]},${B[1]-dy} ${B}`}
+ const p=sel("path",{d,class:dashed?"d":""});sel("circle",{cx:A[0],cy:A[1],r:5});sel("circle",{cx:B[0],cy:B[1],r:5});
+ if(label)sel("text",{x:(A[0]+B[0])/2,y:Math.min(A[1],B[1])-66,"text-anchor":"middle"}).textContent=label;return p}
+function draw(){sv.replaceChildren();
+ E.forEach(([a,b])=>ps[a+b]=link(a,"r",b,"l"));
+ D.forEach(([a,b])=>ps[a+b]=link(a,"t",b,"b",{dashed:1}));
+ X.forEach(([a,b,l])=>link(a,"t",b,"t",{dashed:1,arc:1,label:l}))}
+
+function cell(v){return Array.isArray(v)?v.join(", "):v&&typeof v==="object"?JSON.stringify(v):String(v)}
+function view(o){
+ if(Array.isArray(o)){const cols=Object.keys(o[0]);
+  return el("div",{className:"tw",tabIndex:0,role:"region","aria-label":"Output table"},el("table",{},
+   el("thead",{},el("tr",{},...cols.map(c=>el("th",{scope:"col",textContent:c})))),
+   el("tbody",{},...o.map(r=>el("tr",{},...cols.map(c=>el("td",{textContent:cell(r[c])})))))))}
+ return el("dl",{},...Object.entries(o).flatMap(([k,v])=>[el("dt",{textContent:k}),el("dd",{textContent:cell(v)})]))}
+function show(id){const n=N.find(x=>x.id===id);
+ for(const[k,b]of Object.entries(by))b.setAttribute("aria-pressed",String(k===id));
+ $("#pn").replaceChildren(el("h2",{id:"pt",textContent:n.t}),el("p",{textContent:n.d}),view(n.o),
+  el("details",{},el("summary",{textContent:"Raw JSON"}),el("pre",{textContent:JSON.stringify(n.o,null,2)})));
+ say(`Showing ${n.t}`)}
+
+const calm=matchMedia("(prefers-reduced-motion: reduce)"),sleep=ms=>new Promise(r=>setTimeout(r,ms));
+$("#run").onclick=async e=>{const btn=e.currentTarget;btn.disabled=true;btn.setAttribute("aria-busy","true");
+ Object.values(by).forEach(b=>b.classList.remove("run","done"));Object.values(ps).forEach(p=>p.classList.remove("on"));
+ for(let i=0;i<CHAIN.length;i++){const id=CHAIN[i],n=N.find(x=>x.id===id);
+  btn.textContent=`Running ${i+1} of ${CHAIN.length}`;by[id].classList.add("run");if(i)ps[CHAIN[i-1]+id].classList.add("on");
+  D.filter(d=>d[1]===id).forEach(([s,t])=>{by[s].classList.add("run");ps[s+t].classList.add("on")});
+  show(id);say(`Step ${i+1} of ${CHAIN.length}: ${n.t}`);await sleep(calm.matches?250:700);
+  by[id].classList.replace("run","done");D.filter(d=>d[1]===id).forEach(([s])=>by[s].classList.remove("run"))}
+ btn.textContent="Run workflow";btn.disabled=false;btn.removeAttribute("aria-busy");say("Workflow finished")};
+
+new ResizeObserver(draw).observe(g);draw();show("cv");
+</script></body></html>
